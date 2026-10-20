@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seminar PPG Calon Guru IPS 2026 — Ina Arifa</title>
+<style>
+:root{
+  --brown-dark:#4a2c17;
+  --brown:#6b4226;
+  --brown-mid:#8b5a2b;
+  --brown-light:#c9a77c;
+  --cream:#f5ede0;
+  --cream-soft:#faf6ef;
+  --tan:#e8d9c3;
+  --text:#3b2a1e;
+  --shadow:0 8px 30px rgba(74,44,23,.15);
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.75;
+}
+/* ===== NAVBAR ===== */
+.navbar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(74,44,23,.97);
+  backdrop-filter:blur(8px);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 5%;
+  box-shadow:0 2px 20px rgba(0,0,0,.25);
+  flex-wrap:wrap;gap:10px;
+}
+.navbar .brand{
+  color:var(--cream);font-weight:700;font-size:1.05rem;letter-spacing:.5px;
+}
+.navbar .brand span{color:var(--brown-light);}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap;}
+.nav-links a{
+  color:var(--tan);text-decoration:none;font-size:.82rem;
+  padding:7px 13px;border-radius:20px;transition:.25s;font-weight:500;
+  border:1px solid transparent;
+}
+.nav-links a:hover,.nav-links a.active{
+  background:var(--brown-light);color:var(--brown-dark);border-color:var(--brown-light);
+}
+/* ===== HERO ===== */
+.hero{
+  position:relative;
+  background:linear-gradient(rgba(74,44,23,.72),rgba(74,44,23,.82)),
+    url('https://uny.ac.id/sites/default/files/2024-02/Kumbara%20Rektorat%20UNY_0.jpg') center/cover fixed;
+  color:var(--cream);
+  padding:110px 5% 90px;
+  text-align:center;
+}
+.hero .eyebrow{
+  display:inline-block;background:rgba(201,167,124,.25);
+  border:1px solid var(--brown-light);color:var(--cream);
+  padding:6px 22px;border-radius:30px;font-size:.78rem;
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:22px;
+}
+.hero h1{
+  font-size:clamp(1.8rem,4.5vw,3.1rem);line-height:1.25;
+  max-width:900px;margin:0 auto 8px;font-weight:700;
+}
+.hero h1 span{color:var(--brown-light);}
+.hero .subtitle{
+  font-size:1.05rem;color:var(--tan);max-width:780px;
+  margin:18px auto 0;font-weight:300;
+}
+.hero .divider{
+  width:90px;height:3px;background:var(--brown-light);
+  margin:28px auto;border-radius:3px;
+}
+.hero-meta{
+  display:flex;justify-content:center;gap:40px;flex-wrap:wrap;
+  margin-top:35px;font-size:.9rem;color:var(--tan);
+}
+.hero-meta strong{display:block;color:var(--cream);font-size:1.15rem;margin-top:2px;}
+/* ===== SECTION ===== */
+.section{padding:70px 5%;max-width:1200px;margin:0 auto;}
+.section-title{
+  text-align:center;margin-bottom:45px;
+}
+.section-title h2{
+  font-size:clamp(1.5rem,3vw,2.1rem);color:var(--brown-dark);
+  font-weight:700;display:inline-block;position:relative;padding-bottom:12px;
+}
+.section-title h2::after{
+  content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:70px;height:3px;background:var(--brown-mid);border-radius:3px;
+}
+.section-title p{color:var(--brown-mid);margin-top:14px;font-size:.95rem;max-width:760px;margin-left:auto;margin-right:auto;}
+/* ===== INTRO CARD ===== */
+.intro-card{
+  background:var(--cream-soft);border-radius:18px;
+  padding:42px;box-shadow:var(--shadow);border-left:6px solid var(--brown-mid);
+  margin-bottom:50px;
+}
+.intro-card h3{color:var(--brown-dark);margin-bottom:16px;font-size:1.25rem;}
+.intro-card p{margin-bottom:16px;text-align:justify;}
+/* ===== MENU GRID (5 ikon beranda) ===== */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:26px;
+}
+.menu-card{
+  background:var(--cream-soft);border-radius:18px;padding:34px 24px;
+  text-align:center;cursor:pointer;text-decoration:none;color:var(--text);
+  box-shadow:var(--shadow);transition:.35s;border:2px solid transparent;
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  position:relative;overflow:hidden;
+}
+.menu-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:5px;
+  background:linear-gradient(90deg,var(--brown-mid),var(--brown-light));
+  transform:scaleX(0);transition:.35s;transform-origin:left;
+}
+.menu-card:hover{transform:translateY(-8px);border-color:var(--brown-light);}
+.menu-card:hover::before{transform:scaleX(1);}
+.menu-card .icon{
+  width:66px;height:66px;border-radius:50%;
+  background:linear-gradient(135deg,var(--brown),var(--brown-mid));
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.9rem;color:var(--cream);box-shadow:0 6px 16px rgba(107,66,38,.35);
+}
+.menu-card h4{color:var(--brown-dark);font-size:1.02rem;line-height:1.4;}
+.menu-card p{font-size:.8rem;color:var(--brown-mid);line-height:1.5;}
+/* ===== PROFILE ===== */
+.profile-wrap{display:grid;grid-template-columns:280px 1fr;gap:45px;align-items:start;}
+.profile-photo{
+  border-radius:20px;overflow:hidden;box-shadow:var(--shadow);
+  border:6px solid var(--cream-soft);background:var(--tan);
+}
+.profile-photo img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;}
+.profile-info h3{color:var(--brown-dark);font-size:1.5rem;margin-bottom:6px;}
+.profile-info .tag{color:var(--brown-mid);font-weight:600;font-size:.9rem;margin-bottom:20px;}
+.quote-box{
+  background:linear-gradient(135deg,var(--brown),var(--brown-mid));
+  color:var(--cream);padding:26px 30px;border-radius:14px;
+  margin:24px 0;font-style:italic;position:relative;
+}
+.quote-box::before{
+  content:'"';font-size:3.5rem;position:absolute;top:-6px;left:14px;
+  color:var(--brown-light);opacity:.5;font-family:Georgia,serif;
+}
+.quote-box p{position:relative;z-index:1;font-size:1.02rem;}
+.quote-box cite{display:block;margin-top:12px;font-size:.85rem;color:var(--brown-light);font-style:normal;text-align:right;}
+/* Visi Misi */
+.vm-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px;}
+.vm-card{
+  background:var(--cream-soft);border-radius:14px;padding:26px;
+  box-shadow:var(--shadow);border-top:4px solid var(--brown-mid);
+}
+.vm-card h4{color:var(--brown-dark);margin-bottom:12px;font-size:1.08rem;}
+.vm-card p{font-size:.92rem;text-align:justify;}
+.misi-list{list-style:none;counter-reset:misi;margin-top:8px;}
+.misi-list li{
+  counter-increment:misi;position:relative;padding-left:38px;
+  margin-bottom:14px;font-size:.92rem;text-align:justify;
+}
+.misi-list li::before{
+  content:counter(misi);position:absolute;left:0;top:0;
+  width:26px;height:26px;border-radius:50%;
+  background:var(--brown-mid);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.8rem;font-weight:700;
+}
+/* ===== SEMESTER / MATAKULIAH ===== */
+.semester-header{
+  background:linear-gradient(135deg,var(--brown-dark),var(--brown-mid));
+  color:var(--cream);padding:28px 34px;border-radius:16px;
+  margin-bottom:30px;box-shadow:var(--shadow);
+}
+.semester-header h3{font-size:1.35rem;margin-bottom:8px;}
+.semester-header p{color:var(--tan);font-size:.92rem;}
+.course-nav{
+  display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px;
+}
+.course-nav button{
+  background:var(--cream-soft);border:2px solid var(--tan);
+  color:var(--brown-dark);padding:9px 18px;border-radius:24px;
+  cursor:pointer;font-size:.82rem;font-weight:600;transition:.25s;
+}
+.course-nav button:hover,.course-nav button.active{
+  background:var(--brown-mid);color:var(--cream);border-color:var(--brown-mid);
+}
+.course-panel{display:none;animation:fadeIn .4s ease;}
+.course-panel.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+.course-card{
+  background:var(--cream-soft);border-radius:16px;padding:32px;
+  box-shadow:var(--shadow);margin-bottom:26px;
+}
+.course-card h4{
+  color:var(--brown-dark);font-size:1.15rem;margin-bottom:6px;
+  padding-bottom:12px;border-bottom:2px solid var(--tan);
+}
+.course-card .sks{
+  display:inline-block;background:var(--tan);color:var(--brown-dark);
+  font-size:.72rem;font-weight:700;padding:3px 12px;border-radius:12px;
+  margin-bottom:16px;letter-spacing:.5px;
+}
+.course-card .desc{color:var(--brown);font-size:.93rem;margin-bottom:20px;font-style:italic;}
+.reflection-block h5{
+  color:var(--brown-dark);font-size:1rem;margin:20px 0 10px;
+  padding-left:12px;border-left:4px solid var(--brown-mid);
+}
+.reflection-block p{font-size:.92rem;text-align:justify;margin-bottom:12px;}
+.reflection-block .q{
+  font-weight:600;color:var(--brown);margin-bottom:8px;font-size:.92rem;
+}
+.artefak-box{
+  background:#f0e6d6;border-radius:12px;padding:20px 24px;
+  margin-top:18px;border:1px dashed var(--brown-light);
+}
+.artefak-box h5{color:var(--brown-dark);margin-bottom:10px;font-size:.95rem;}
+.artefak-box p{font-size:.9rem;text-align:justify;margin-bottom:10px;}
+.identity-box{
+  background:var(--tan);border-radius:10px;padding:16px 22px;
+  margin-bottom:22px;font-size:.88rem;display:grid;
+  grid-template-columns:110px 12px 1fr;gap:4px 0;
+}
+.identity-box span:nth-child(3n+1){font-weight:600;color:var(--brown-dark);}
+/* ===== REFLEKSI PPG ===== */
+.lk3-table{width:100%;border-collapse:collapse;margin-top:20px;font-size:.9rem;}
+.lk3-table th,.lk3-table td{
+  border:1px solid var(--tan);padding:16px 18px;text-align:left;vertical-align:top;
+}
+.lk3-table th{
+  background:var(--brown-mid);color:var(--cream);font-weight:600;font-size:.85rem;
+}
+.lk3-table td{background:var(--cream-soft);text-align:justify;}
+.lk3-table td:first-child{font-weight:600;color:var(--brown-dark);width:26%;}
+/* ===== KARYA INOVASI ===== */
+.karya-card{
+  background:linear-gradient(135deg,#faf6ef,#f0e6d6);
+  border-radius:20px;padding:50px 40px;text-align:center;
+  box-shadow:var(--shadow);border:2px solid var(--brown-light);
+  max-width:850px;margin:0 auto;
+}
+.karya-card .badge{
+  display:inline-block;background:var(--brown);color:var(--cream);
+  padding:8px 26px;border-radius:30px;font-size:.8rem;letter-spacing:1.5px;
+  text-transform:uppercase;margin-bottom:24px;font-weight:600;
+}
+.karya-card p{font-size:1rem;text-align:justify;margin-bottom:18px;color:var(--text);}
+.process-note{
+  background:var(--cream-soft);border-radius:12px;padding:20px 26px;
+  margin-top:26px;border-left:4px solid var(--brown-mid);text-align:left;
+}
+.process-note strong{color:var(--brown-dark);}
+/* ===== FOOTER ===== */
+footer{
+  background:var(--brown-dark);color:var(--tan);
+  text-align:center;padding:40px 5%;margin-top:60px;font-size:.85rem;
+}
+footer strong{color:var(--cream);}
+/* ===== BACK TO TOP ===== */
+#top-btn{
+  position:fixed;bottom:28px;right:28px;z-index:99;
+  width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;
+  background:var(--brown-mid);color:var(--cream);font-size:1.3rem;
+  box-shadow:0 6px 20px rgba(74,44,23,.4);opacity:0;pointer-events:none;
+  transition:.35s;
+}
+#top-btn.show{opacity:1;pointer-events:auto;}
+#top-btn:hover{background:var(--brown-dark);transform:translateY(-3px);}
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .profile-wrap{grid-template-columns:1fr;}
+  .profile-photo{max-width:280px;margin:0 auto;}
+  .vm-grid{grid-template-columns:1fr;}
+  .hero{padding:80px 5% 60px;background-attachment:scroll;}
+  .hero-meta{gap:24px;}
+}
+@media(max-width:600px){
+  .nav-links a{font-size:.72rem;padding:6px 10px;}
+  .intro-card,.course-card{padding:24px;}
+  .identity-box{grid-template-columns:100px 10px 1fr;font-size:.8rem;}
+  .lk3-table th,.lk3-table td{padding:12px;font-size:.82rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="brand">Seminar PPG <span>IPS 2026</span></div>
+  <div class="nav-links">
+    <a href="#beranda" class="active">Beranda</a>
+    <a href="#profil">Profil</a>
+    <a href="#semester1">Semester 1</a>
+    <a href="#semester2">Semester 2</a>
+    <a href="#refleksi-ppg">Refleksi PPG</a>
+    <a href="#karya">Karya Inovasi</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="beranda">
+  <span class="eyebrow">Seminar Pendidikan Profesi Guru · 2026</span>
+  <h1>Seminar PPG Calon Guru <br><span>Ilmu Pengetahuan Sosial</span></h1>
+  <div class="divider"></div>
+  <p class="subtitle">
+    Wadah reflektif bagi calon guru untuk mengasah kemampuan evaluasi diri secara kritis dan sistematis
+    dalam membentuk pendidik yang inovatif, responsif, dan adaptif.
+  </p>
+  <div class="hero-meta">
+    <div>Mahasiswa<strong>Ina Arifa</strong></div>
+    <div>NIM<strong>25105260500</strong></div>
+    <div>Program Studi<strong>Pendidikan IPS — UNY</strong></div>
+    <div>Total Beban<strong>38 SKS · 2 Semester</strong></div>
+  </div>
+</header>
+
+<!-- ============ INTRO ============ -->
+<section class="section">
+  <div class="intro-card">
+    <h3>Pendahuluan</h3>
+    <p>
+      Mata kuliah Seminar PPG merupakan wadah reflektif bagi calon guru untuk mengasah kemampuan evaluasi
+      diri secara kritis dan sistematis. Melalui kegiatan identifikasi visi pribadi, refleksi pengalaman
+      belajar interdisipliner, serta penyusunan karya inovasi berbasis pengalaman paling bermakna, mata
+      kuliah ini membentuk pendidik yang inovatif, responsif, dan adaptif. Refleksi ini menjadi kunci utama
+      dalam meningkatkan efektivitas pembelajaran yang berpusat pada peserta didik serta siap menghadapi
+      tantangan dunia pendidikan masa depan.
+    </p>
+    <p>
+      Saya <strong>Ina Arifa</strong>, Prodi Pendidikan IPS Universitas Negeri Yogyakarta, sedang melaksanakan
+      kegiatan refleksi seluruh mata kuliah yang ada dengan diwadahi mata kuliah Seminar Pendidikan Profesi
+      Guru. Perjalanan studi pada Program Pendidikan Profesi Guru (PPG) Calon Guru dirancang secara sistematis
+      melalui kurikulum terintegrasi sebanyak <strong>38 SKS selama dua semester</strong>. Seluruh mata kuliah
+      dirangkai untuk menjembatani teori pedagogis, penguatan karakter diri, serta praktik lapangan yang
+      kontekstual dan berakar pada realitas peserta didik — dan saya sudah melaksanakan keseluruhan mata
+      kuliah yang ada.
+    </p>
+  </div>
+
+  <!-- 5 MENU IKON -->
+  <div class="menu-grid">
+    <a href="#profil" class="menu-card">
+      <div class="icon">👤</div>
+      <h4>Profil Mahasiswa</h4>
+      <p>Identitas, latar belakang pendidikan, visi, misi & tujuan sebagai guru</p>
+    </a>
+    <a href="#semester1" class="menu-card">
+      <div class="icon">📘</div>
+      <h4>Refleksi Semester 1</h4>
+      <p>Kumpulan refleksi mata kuliah semester 1 dan dokumen pendukung</p>
+    </a>
+    <a href="#semester2" class="menu-card">
+      <div class="icon">📗</div>
+      <h4>Refleksi Semester 2</h4>
+      <p>Kumpulan refleksi mata kuliah semester 2 dan dokumen pendukung</p>
+    </a>
+    <a href="#refleksi-ppg" class="menu-card">
+      <div class="icon">🔍</div>
+      <h4>Refleksi Pengalaman Belajar PPG</h4>
+      <p>Evaluasi & masukan pengembangan diri — paradigma baru setelah Seminar PPG</p>
+    </a>
+    <a href="#karya" class="menu-card">
+      <div class="icon">💡</div>
+      <h4>Karya Inovasi Pendidikan</h4>
+      <p>Produk akhir berbasis kebaruan, kreativitas, kontekstualitas & keefektifan</p>
+    </a>
+  </div>
+</section>
+
+<!-- ============ PROFIL ============ -->
+<section class="section" id="profil">
+  <div class="section-title">
+    <h2>Profil Mahasiswa &amp; Filosofi Mendidik</h2>
+    <p>Identitas, latar belakang, serta visi, misi, dan strategi mendidik sebagai calon guru profesional.</p>
+  </div>
+
+  <div class="profile-wrap">
+    <div class="profile-photo">
+      <img src="profil OK.jpg" alt="Foto Profil Ina Arifa">
+    </div>
+    <div class="profile-info">
+      <h3>Ina Arifa</h3>
+      <div class="tag">Mahasiswi PPG Calon Guru · Pendidikan IPS · Universitas Negeri Yogyakarta · 2026</div>
+      <p style="text-align:justify;">
+        Saya Ina Arifa, mahasiswi Program Profesi Guru (Calon Guru) Pendidikan IPS tahun 2026. Lahir dan
+        tumbuh di Borobudur, Magelang. Dikenal sebagai tempat berdirinya Candi Borobudur, warisan peradaban
+        yang menyimpan jejak sejarah dan nilai luhur budaya, Borobudur mengajarkan bahwa setiap tempat
+        memiliki cerita dan setiap warisan menyimpan pelajaran. Dari tanah yang kaya akan sejarah dan kearifan
+        lokal ini, saya belajar bahwa ilmu tidak hanya ditemukan dalam buku, tetapi juga dalam kehidupan
+        masyarakat dan lingkungan sekitar.
+      </p>
+      <div class="quote-box">
+        <p>Dari tanah yang menyimpan jejak peradaban, tumbuh langkah untuk mencerdaskan masa depan.</p>
+        <cite>— Ina Arifa, dari Bumi Borobudur, Magelang</cite>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:50px;">
+    <h2>Visi, Misi, dan Strategi Mendidik</h2>
+  </div>
+
+  <div class="vm-grid">
+    <div class="vm-card">
+      <h4>Visi Pribadi untuk Pendidikan Indonesia</h4>
+      <p>
+        Mewujudkan pendidikan yang aktif, kreatif, inovatif dan berpihak pada kebutuhan murid melalui
+        pembelajaran bermakna yang mengembangkan potensi, karakter dan kemandirian murid dengan tetap
+        melestarikan budaya lokal serta adaptif terhadap perkembangan zaman.
+      </p>
+    </div>
+    <div class="vm-card">
+      <h4>Visi Pribadi sebagai Calon Guru</h4>
+      <p>
+        Menjadi calon guru yang profesional, reflektif, inovatif dan berpihak pada murid dengan merancang
+        pembelajaran yang adaptif, menyenangkan dan bermakna sesuai kebutuhan serta karakteristik murid.
+      </p>
+    </div>
+  </div>
+
+  <div class="vm-card" style="margin-top:22px;">
+    <h4>Komitmen Langkah Nyata (Misi Aksi)</h4>
+    <p style="margin-bottom:14px;">Untuk mewujudkan visi tersebut, langkah konkret yang saya jalankan meliputi:</p>
+    <ol class="misi-list">
+      <li>Mengembangkan kompetensi diri secara berkelanjutan melalui belajar, pelatihan, dan refleksi untuk menjadi guru yang profesional.</li>
+      <li>Merancang pembelajaran yang aktif, kreatif, inovatif, dan bermakna sesuai kebutuhan serta karakteristik murid.</li>
+      <li>Menciptakan lingkungan belajar yang aman, nyaman, inklusif, dan berpihak pada kebutuhan serta potensi setiap murid.</li>
+      <li>Menanamkan nilai-nilai karakter, kemandirian, dan budaya lokal dalam pembelajaran agar murid berkembang tanpa kehilangan identitas budayanya.</li>
+      <li>Memanfaatkan teknologi dan perkembangan zaman untuk meningkatkan kualitas pembelajaran serta mempersiapkan murid menghadapi tantangan masa depan.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ SEMESTER 1 ============ -->
+<section class="section" id="semester1">
+  <div class="section-title">
+    <h2>Refleksi Mata Kuliah Semester 1</h2>
+  </div>
+  <div class="semester-header">
+    <h3>Semester 1: Peletakan Fondasi dan Integrasi Terbimbing (18 SKS)</h3>
+    <p>
+      Pada semester pertama, fokus utama tertuju pada penguatan filosofi dasar, pemahaman mendalam terhadap
+      keberagaman murid, serta penguasaan strategi pembelajaran mendalam (deep learning).
+    </p>
+  </div>
+
+  <div class="course-nav">
+    <button class="active" data-target="s1-1">Pemahaman Peserta Didik &amp; Pembelajaran</button>
+    <button data-target="s1-2">Pembelajaran Kreatif &amp; Inovatif</button>
+    <button data-target="s1-3">Filosofi Pendidikan &amp; Nilai</button>
+    <button data-target="s1-4">PMA Dasar</button>
+    <button data-target="s1-5">Growth Mindset</button>
+    <button data-target="s1-6">PPL 1 — Terbimbing</button>
+  </div>
+
+  <!-- MATA KULIAH 1 -->
+  <div class="course-panel active" id="s1-1">
+    <div class="course-card">
+      <span class="sks">3 SKS</span>
+      <h4>Pemahaman tentang Peserta Didik dan Pembelajaran</h4>
+      <p class="desc">Mengasah kemampuan profiling murid dan merancang pembelajaran yang berpusat pada peserta didik.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Materi Pemahaman Peserta Didik dan Pembelajaran memiliki keterkaitan yang sangat erat dengan peran
+          saya sebagai calon guru karena memberikan bekal untuk memahami karakteristik, kebutuhan, minat,
+          bakat, serta tahapan perkembangan setiap peserta didik. Pemahaman ini membantu saya menyadari bahwa
+          setiap murid memiliki cara belajar yang berbeda sehingga pembelajaran tidak dapat dilakukan dengan
+          pendekatan yang sama untuk semua. Hal ini sejalan dengan teori perkembangan kognitif Jean Piaget
+          yang menyatakan bahwa murid SMP berada pada tahap operasional formal, yaitu mulai mampu berpikir
+          logis, abstrak, dan menganalisis suatu permasalahan. Oleh karena itu, sebagai calon guru IPS saya
+          perlu merancang pembelajaran yang mendorong murid berpikir kritis, memecahkan masalah, dan
+          menghubungkan materi dengan kehidupan sehari-hari.
+        </p>
+        <p>
+          Selain itu, teori konstruktivisme Lev Vygotsky mengajarkan bahwa proses belajar berlangsung melalui
+          interaksi sosial dengan bantuan guru maupun teman sebaya. Konsep Zone of Proximal Development (ZPD)
+          dan scaffolding memberikan pemahaman bahwa guru perlu memberikan bimbingan secara bertahap sesuai
+          kemampuan masing-masing murid. Di sisi lain, teori behavioristik menekankan pentingnya penguatan
+          (reinforcement) melalui apresiasi dan umpan balik positif untuk membentuk perilaku belajar yang
+          baik, sedangkan teori humanistik dari Abraham Maslow dan Carl Rogers mengingatkan bahwa kebutuhan
+          emosional, rasa aman, dan penghargaan terhadap murid harus terpenuhi agar mereka dapat belajar
+          secara optimal. Teori-teori tersebut menjadi dasar bagi saya dalam menciptakan pembelajaran yang
+          aktif, inklusif, dan berpihak pada peserta didik.
+        </p>
+        <p>
+          Melalui materi ini, saya juga memahami bahwa asesmen dan refleksi merupakan bagian penting dalam
+          proses pembelajaran. Asesmen tidak hanya digunakan untuk mengetahui hasil belajar, tetapi juga
+          untuk mengidentifikasi kebutuhan, kemampuan awal, serta perkembangan peserta didik sehingga
+          pembelajaran dapat disesuaikan dengan kondisi mereka. Sebagai calon guru, saya perlu terus
+          melakukan refleksi terhadap proses pembelajaran yang telah dilaksanakan agar dapat memperbaiki
+          strategi, metode, maupun media pembelajaran. Dengan demikian, materi Pemahaman Peserta Didik dan
+          Pembelajaran menjadi landasan bagi saya untuk menjadi guru yang profesional, reflektif, dan mampu
+          memfasilitasi setiap murid berkembang sesuai dengan potensi yang dimilikinya.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Selama mengikuti perkuliahan Pemahaman Peserta Didik dan Pembelajaran, saya menemukan beberapa
+          materi yang berbeda dengan praktik yang selama ini saya lakukan saat mengajar IPS. Sebelumnya, saya
+          lebih berfokus pada penyampaian materi dan pencapaian tujuan pembelajaran, sedangkan melalui
+          perkuliahan saya memahami bahwa pembelajaran harus diawali dengan mengenali karakteristik,
+          kebutuhan, kemampuan awal, serta perkembangan peserta didik. Saya juga mempelajari pentingnya
+          melakukan asesmen diagnostik sebelum pembelajaran agar strategi, metode, dan media yang digunakan
+          benar-benar sesuai dengan kondisi murid.
+        </p>
+        <p>
+          Perbedaan lainnya terlihat pada penerapan teori-teori belajar dalam pembelajaran IPS. Sebelumnya,
+          saya cenderung menggunakan diskusi kelompok tanpa mempertimbangkan landasan teorinya. Setelah
+          mengikuti perkuliahan, saya memahami bahwa pembelajaran IPS sebaiknya dirancang berdasarkan teori
+          konstruktivisme Vygotsky, yaitu memberikan kesempatan kepada murid untuk membangun pengetahuan
+          melalui diskusi, kolaborasi, dan pemecahan masalah. Selain itu, teori perkembangan kognitif Piaget
+          mengingatkan bahwa murid SMP sudah mampu berpikir logis dan abstrak sehingga pembelajaran IPS perlu
+          menghadirkan studi kasus, analisis peristiwa sejarah, maupun permasalahan sosial yang kontekstual
+          agar kemampuan berpikir kritis mereka berkembang.
+        </p>
+        <p>
+          Materi yang juga memberikan perspektif baru adalah pentingnya pembelajaran yang berdiferensiasi dan
+          penggunaan asesmen sebagai bagian dari proses belajar. Dalam praktik sebelumnya, saya lebih banyak
+          memberikan aktivitas dan penilaian yang sama kepada seluruh murid. Melalui perkuliahan, saya
+          memahami bahwa setiap murid memiliki kemampuan, minat, dan gaya belajar yang berbeda sehingga guru
+          perlu memberikan variasi aktivitas, media, maupun bentuk asesmen. Pemahaman ini akan saya terapkan
+          dalam pembelajaran IPS agar setiap murid memperoleh kesempatan belajar yang sesuai dengan
+          kebutuhannya, lebih aktif dalam pembelajaran, serta mampu mengembangkan kemampuan berpikir kritis,
+          kolaboratif, dan pemecahan masalah.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Sebagai calon guru, saya mempelajari beberapa konsep utama yang menjadi dasar dalam merancang dan
+          melaksanakan pembelajaran. Konsep pertama adalah memahami karakteristik peserta didik, yaitu bahwa
+          setiap murid memiliki kemampuan, minat, bakat, gaya belajar, latar belakang, serta tahap
+          perkembangan yang berbeda. Oleh karena itu, guru perlu mengenali kebutuhan setiap murid agar
+          pembelajaran yang dirancang benar-benar sesuai dan mampu mengembangkan potensi mereka secara
+          optimal.
+        </p>
+        <p>
+          Konsep penting berikutnya adalah penerapan teori belajar dalam pembelajaran. Saya mempelajari teori
+          perkembangan kognitif Piaget yang menjelaskan bahwa murid SMP sudah berada pada tahap operasional
+          formal sehingga mampu berpikir logis dan abstrak. Saya juga mempelajari teori konstruktivisme
+          Vygotsky yang menekankan bahwa pengetahuan dibangun melalui interaksi sosial dengan bantuan
+          scaffolding, teori behavioristik yang menekankan pentingnya penguatan (reinforcement) untuk
+          membentuk perilaku belajar yang positif, serta teori humanistik yang mengutamakan pemenuhan
+          kebutuhan emosional dan penghargaan terhadap setiap murid agar proses belajar berlangsung secara
+          optimal.
+        </p>
+        <p>
+          Selain itu, saya memahami bahwa pembelajaran yang efektif harus berpusat pada peserta didik,
+          didukung oleh asesmen yang berkelanjutan dan refleksi terhadap proses pembelajaran. Asesmen tidak
+          hanya digunakan untuk mengukur hasil belajar, tetapi juga untuk mengetahui kebutuhan dan
+          perkembangan murid sehingga pembelajaran dapat terus diperbaiki. Konsep-konsep tersebut menjadi
+          bekal bagi saya untuk menjadi guru yang profesional, reflektif, dan mampu menciptakan pembelajaran
+          yang aktif, bermakna, inklusif, serta berpihak pada perkembangan setiap peserta didik.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mempelajari materi Pemahaman Peserta Didik dan Pembelajaran, saya ingin melakukan beberapa
+          perubahan dalam praktik mengajar. Sebelumnya, saya lebih berfokus pada penyampaian materi dan
+          penyelesaian target pembelajaran. Ke depan, saya ingin lebih mengutamakan pemahaman terhadap
+          karakteristik, kebutuhan, kemampuan awal, serta perkembangan setiap peserta didik sebelum
+          merancang pembelajaran. Saya juga akan membiasakan melakukan asesmen diagnostik agar strategi,
+          metode, dan media yang digunakan lebih sesuai dengan kondisi murid.
+        </p>
+        <p>
+          Selain itu, saya ingin menerapkan pembelajaran yang lebih berpusat pada peserta didik dengan
+          memanfaatkan teori-teori belajar yang telah dipelajari. Dalam pembelajaran IPS, saya akan lebih
+          banyak menggunakan studi kasus, diskusi, pemecahan masalah, dan aktivitas kolaboratif agar murid
+          dapat membangun pengetahuannya sendiri sesuai dengan teori konstruktivisme. Saya juga akan
+          memberikan scaffolding kepada murid yang membutuhkan bantuan serta menciptakan suasana kelas yang
+          aman, menghargai perbedaan, dan memberikan penguatan positif untuk meningkatkan motivasi belajar.
+        </p>
+        <p>
+          Perubahan lain yang ingin saya lakukan adalah menjadikan asesmen dan refleksi sebagai bagian yang
+          tidak terpisahkan dari proses pembelajaran. Saya akan menggunakan hasil asesmen untuk memperbaiki
+          strategi pembelajaran dan memberikan layanan yang lebih sesuai dengan kebutuhan murid. Selain itu,
+          saya berkomitmen untuk terus melakukan refleksi terhadap praktik mengajar agar dapat meningkatkan
+          kompetensi profesional, menciptakan pembelajaran IPS yang lebih bermakna, serta membantu setiap
+          murid berkembang sesuai dengan potensi yang dimilikinya.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> Tugas tertulis identifikasi kebutuhan belajar dan perencanaan pembelajaran berdasarkan teori perkembangan pada keberagaman kelas Pak Toni; serta Luaran UTS berupa analisis kebutuhan belajar berdasarkan profil peserta didik pada kelas Pak Andi dan rencana pembelajaran.</p>
+          <p><strong>2. Alasan pemilihan:</strong> Kedua artefak merepresentasikan proses pembelajaran yang paling sesuai dengan capaian mata kuliah. Melalui tugas identifikasi kebutuhan belajar di kelas Pak Toni, saya belajar menganalisis karakteristik peserta didik serta menerapkan teori perkembangan sebagai dasar menyusun pembelajaran. Luaran UTS kelas Pak Andi menunjukkan kemampuan mengintegrasikan hasil analisis karakteristik peserta didik ke dalam perencanaan pembelajaran — membuktikan bahwa saya tidak hanya memahami konsep secara teoritis, tetapi juga mampu menerapkannya.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Analisis karakteristik dan kebutuhan belajar peserta didik, penerapan teori perkembangan dalam menganalisis kondisi kelas, serta penyusunan rencana pembelajaran berdasarkan hasil analisis tersebut. Bagian-bagian ini menunjukkan perubahan cara pandang saya bahwa pembelajaran efektif harus berpusat pada peserta didik, mempertimbangkan keberagaman, serta dirancang berdasarkan kebutuhan belajar mereka.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MATA KULIAH 2 -->
+  <div class="course-panel" id="s1-2">
+    <div class="course-card">
+      <span class="sks">2 SKS · MK Pilihan</span>
+      <h4>Pembelajaran Kreatif dan Inovatif</h4>
+      <p class="desc">Mengembangkan media dan metode belajar yang interaktif, kontekstual, serta berbasis kearifan lokal.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Perkuliahan Pembelajaran Kreatif dan Inovatif memiliki keterkaitan yang sangat erat dengan peran
+          saya sebagai calon guru karena memberikan pemahaman bahwa guru perlu mampu menciptakan pembelajaran
+          yang menarik, aktif, dan sesuai dengan kebutuhan peserta didik. Guru tidak cukup hanya menguasai
+          materi pembelajaran, tetapi juga perlu memiliki kemampuan dalam memilih strategi, model, metode,
+          media, dan sumber belajar yang dapat mendorong peserta didik untuk terlibat secara aktif dalam
+          proses pembelajaran.
+        </p>
+        <p>
+          Sebagai calon guru IPS, materi perkuliahan ini membantu saya memahami pentingnya menghadirkan
+          pembelajaran yang kontekstual dan tidak monoton. Kreativitas dan inovasi guru diperlukan agar
+          materi IPS yang cukup beragam dapat dikaitkan dengan permasalahan atau fenomena yang dekat dengan
+          kehidupan peserta didik. Dengan demikian, peserta didik tidak hanya menerima informasi, tetapi
+          dapat berpikir kritis, bekerja sama, memecahkan masalah, dan mengembangkan pemahaman melalui
+          pengalaman belajar yang lebih bermakna.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Salah satu hal yang berbeda dari praktik yang saya lakukan sebelumnya adalah pemahaman bahwa
+          pembelajaran kreatif dan inovatif tidak hanya berarti menggunakan media pembelajaran yang menarik
+          atau teknologi digital. Kreativitas dalam pembelajaran juga berkaitan dengan bagaimana guru
+          merancang pengalaman belajar yang memberikan kesempatan kepada peserta didik untuk mengeksplorasi,
+          berpikir, berdiskusi, memecahkan masalah, dan menghasilkan sesuatu.
+        </p>
+        <p>
+          Selain itu, saya mendapatkan pemahaman yang lebih mendalam mengenai pentingnya melakukan
+          identifikasi masalah pembelajaran sebelum menentukan solusi atau inovasi. Sebelumnya, saya
+          cenderung memilih model atau media pembelajaran berdasarkan anggapan bahwa media tersebut menarik
+          bagi peserta didik. Setelah mempelajari materi ini, saya memahami bahwa inovasi pembelajaran
+          seharusnya berangkat dari kebutuhan dan permasalahan nyata yang ditemukan di kelas. Hal tersebut
+          kemudian saya terapkan melalui penyusunan Proposal PTK dengan mengidentifikasi permasalahan
+          pembelajaran di SMP Negeri 15 Yogyakarta dan merancang tindakan sebagai upaya perbaikannya.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Konsep utama yang saya pelajari adalah bahwa pembelajaran kreatif dan inovatif harus berorientasi
+          pada kebutuhan dan keterlibatan peserta didik. Guru perlu menciptakan pembelajaran yang memberikan
+          ruang kepada peserta didik untuk aktif membangun pengetahuan, mengembangkan keterampilan berpikir,
+          bekerja sama, dan menyelesaikan permasalahan.
+        </p>
+        <p>
+          Saya juga memahami pentingnya identifikasi masalah, perencanaan tindakan, penerapan inovasi,
+          asesmen, refleksi, dan perbaikan pembelajaran secara berkelanjutan. Konsep tersebut berkaitan erat
+          dengan Penelitian Tindakan Kelas (PTK), karena melalui PTK guru dapat mengidentifikasi
+          permasalahan yang terjadi dalam pembelajaran, merancang tindakan yang tepat, mengamati dampaknya,
+          dan melakukan refleksi untuk menentukan perbaikan berikutnya. Bagi saya, PTK menjadi salah satu
+          bentuk upaya guru untuk terus melakukan inovasi berdasarkan permasalahan nyata di kelas.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mendapatkan materi perkuliahan Pembelajaran Kreatif dan Inovatif, saya ingin mengubah cara
+          saya dalam merancang pembelajaran. Saya tidak ingin memilih model, metode, atau media pembelajaran
+          hanya karena terlihat menarik, tetapi terlebih dahulu mempertimbangkan tujuan pembelajaran,
+          karakteristik peserta didik, permasalahan yang dihadapi, serta kebutuhan belajar mereka.
+        </p>
+        <p>
+          Saya juga ingin membiasakan diri untuk melakukan refleksi dan evaluasi terhadap pembelajaran yang
+          telah dilaksanakan. Ketika ditemukan permasalahan seperti rendahnya keaktifan, motivasi, atau
+          pemahaman peserta didik, saya ingin mencari solusi yang tepat melalui inovasi pembelajaran dan
+          tidak menganggap permasalahan tersebut sebagai sesuatu yang biasa. Dengan demikian, saya dapat
+          menjadi guru yang terus belajar, kreatif dalam mencari solusi, dan berkomitmen melakukan perbaikan
+          pembelajaran secara berkelanjutan.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> Proposal Penelitian Tindakan Kelas (PTK) yang disusun sebagai tugas UAS, berangkat dari permasalahan pembelajaran di SMP Negeri 15 Yogyakarta.</p>
+          <p><strong>2. Alasan pemilihan:</strong> Proposal PTK paling menggambarkan penerapan materi dalam pengalaman nyata. Melalui penyusunan proposal, saya belajar bahwa inovasi pembelajaran harus didasarkan pada permasalahan dan kebutuhan peserta didik. Penyusunan PTK melatih saya berpikir sebagai guru yang reflektif dan solutif — tidak hanya mengidentifikasi masalah, tetapi juga merancang tindakan perbaikan untuk meningkatkan kualitas proses dan hasil belajar.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Identifikasi masalah, latar belakang, rumusan masalah, rancangan tindakan, indikator keberhasilan, serta instrumen penelitian. Bagian identifikasi masalah dan latar belakang melatih saya mengenali permasalahan berdasarkan kondisi nyata; rancangan tindakan menunjukkan penerapan konsep kreativitas dan inovasi; indikator keberhasilan dan instrumen membantu saya memahami bahwa inovasi perlu dievaluasi. Artefak ini menjadi bukti bahwa saya mulai melihat permasalahan di kelas sebagai dasar untuk mencari dan mengembangkan solusi pembelajaran.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MATA KULIAH 3 -->
+  <div class="course-panel" id="s1-3">
+    <div class="course-card">
+      <span class="sks">2 SKS</span>
+      <h4>Filosofi Pendidikan dan Pendidikan Nilai</h4>
+      <p class="desc">Menanamkan akar pemikiran Ki Hadjar Dewantara dan pemaknaan nilai-nilai luhur Pancasila dalam praktik mendidik.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Materi perkuliahan Filosofi Pendidikan dan Pendidikan Nilai memiliki keterkaitan yang sangat erat
+          dengan peran saya sebagai calon guru yaitu materi tersebut menjadi landasan dalam menjalankan tugas
+          sebagai pendidik. Melalui Filosofi Pendidikan, saya memahami bahwa tugas guru tidak hanya
+          menyampaikan pengetahuan, tetapi juga menuntun peserta didik agar berkembang sesuai potensi, kodrat
+          alam, dan kodrat zamannya. Sementara itu, Pendidikan Nilai mengajarkan bahwa setiap proses
+          pembelajaran harus menjadi sarana untuk menanamkan nilai-nilai karakter, seperti tanggung jawab,
+          kejujuran, gotong royong, dan sikap saling menghargai yang berlandaskan nilai-nilai Pancasila.
+          Sebagai calon guru tidak hanya bertugas mengajarkan materi pelajaran, tetapi juga menjadi teladan,
+          membangun lingkungan belajar yang positif, menerapkan pembelajaran yang berpusat pada peserta
+          didik, serta mengintegrasikan nilai-nilai Pancasila dan kode etik profesi dalam setiap tindakan.
+          Materi tersebut menjadi pedoman untuk menjadi guru yang profesional, berkarakter, dan mampu
+          membentuk peserta didik yang tidak hanya cerdas secara akademik, tetapi juga memiliki karakter yang
+          baik.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Terdapat beberapa materi yang berbeda dengan praktik yang selama ini saya lakukan, diantaranya
+          sebelum mendapatkan materi Filosofi Pendidikan dan Pendidikan Nilai saya lebih fokus pada
+          penyampaian materi dan pencapaian tujuan pembelajaran dari aspek kognitif. Namun melalui mata
+          kuliah Filosofi Pendidikan dan Pendidikan Nilai, saya memahami bahwa pembelajaran seharusnya juga
+          berorientasi pada pembentukan karakter, pengembangan nilai, dan penumbuhan pola pikir bertumbuh
+          (growth mindset) pada peserta didik.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Sebagai calon guru, saya mempelajari beberapa konsep utama yang menjadi bekal dalam menjalankan
+          profesi pendidik. Pertama, saya memahami bahwa tujuan pendidikan tidak hanya mengembangkan
+          kemampuan akademik, tetapi juga membentuk karakter peserta didik sesuai dengan nilai-nilai
+          Pancasila. Kedua, saya memahami pentingnya filosofi pendidikan yang menempatkan guru sebagai
+          penuntun, fasilitator, dan teladan dalam membantu peserta didik berkembang sesuai potensi, kodrat
+          alam, dan kodrat zamannya.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mempelajari mata kuliah Filosofi Pendidikan dan Pendidikan Nilai, saya ingin melakukan
+          perubahan dalam cara saya memandang dan menjalankan peran sebagai calon guru. Saya ingin beralih
+          dari pembelajaran yang hanya berorientasi pada penyampaian materi menjadi pembelajaran yang juga
+          menekankan pembentukan karakter, penanaman nilai-nilai Pancasila dan pengembangan potensi peserta
+          didik secara menyeluruh.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> Hasil analisis pembelajaran dari film Sokola Rimba, hasil diskusi atau lembar refleksi mengenai penerapan filosofi pendidikan, tugas analisis tentang peran guru sebagai penuntun, serta jurnal refleksi yang memuat perubahan pemahaman setelah mempelajari nilai-nilai pendidikan melalui Sokola Rimba.</p>
+          <p><strong>2. Alasan pemilihan:</strong> Analisis film Sokola Rimba memberikan pengalaman belajar paling bermakna dalam memahami filosofi pendidikan. Melalui analisis tersebut, saya belajar bahwa pendidikan tidak hanya berfokus pada penyampaian materi, tetapi juga pada upaya memahami latar belakang, kebutuhan, dan potensi setiap peserta didik. Film tersebut menunjukkan bahwa guru perlu menjadi penuntun yang mampu menghadirkan pembelajaran kontekstual, menghargai keberagaman, serta berpihak pada peserta didik. Artefak ini mencerminkan perubahan cara pandang saya bahwa keberhasilan pendidikan tidak hanya diukur dari pencapaian akademik, tetapi juga dari kemampuan guru membentuk karakter, menanamkan nilai-nilai kemanusiaan, dan menciptakan pembelajaran yang bermakna.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Analisis mengenai peran guru sebagai penuntun yang mampu memahami kondisi, kebutuhan, dan potensi peserta didik; serta refleksi tentang perjuangan guru dalam membangun kepercayaan masyarakat dan menghargai keberagaman budaya. Dari artefak tersebut, saya semakin memahami bahwa menjadi guru berarti tidak hanya mengajar, tetapi juga menjadi teladan, membangun hubungan baik dengan peserta didik, serta menciptakan pembelajaran yang relevan dengan kehidupan mereka.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MATA KULIAH 4 -->
+  <div class="course-panel" id="s1-4">
+    <div class="course-card">
+      <span class="sks">3 SKS</span>
+      <h4>Pembelajaran Mendalam dan Asesmen (PMA) Dasar</h4>
+      <p class="desc">Menyusun instrumen evaluasi dan asesmen diagnostik untuk mengenali potensi unik tiap murid.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Materi perkuliahan Pembelajaran Mendalam dan Asesmen memiliki keterkaitan yang sangat erat dengan
+          peran saya sebagai calon guru karena memberikan pemahaman bahwa pembelajaran tidak hanya
+          berorientasi pada penyampaian materi dan pencapaian nilai, tetapi juga pada bagaimana peserta didik
+          dapat memahami, menghubungkan, menerapkan, dan merefleksikan pengetahuan yang diperoleh dalam
+          kehidupan nyata. Sebagai calon guru, saya perlu mampu menciptakan pembelajaran yang berkesadaran,
+          bermakna, dan menggembirakan, sehingga peserta didik tidak hanya menghafal konsep, tetapi
+          benar-benar memahami makna dari pembelajaran.
+        </p>
+        <p>
+          Materi ini juga mengubah cara pandang saya terhadap asesmen. Asesmen tidak seharusnya hanya
+          dilakukan pada akhir pembelajaran untuk mengetahui nilai peserta didik, tetapi menjadi bagian yang
+          terintegrasi dalam proses pembelajaran. Asesmen dapat digunakan untuk mengetahui kebutuhan belajar
+          peserta didik, memberikan umpan balik, serta membantu guru menentukan tindak lanjut pembelajaran.
+          Hal ini penting bagi saya sebagai calon guru IPS karena karakteristik materi IPS sangat dekat dengan
+          kehidupan peserta didik, sehingga pembelajaran dan asesmen perlu dirancang agar mampu mengembangkan
+          kemampuan berpikir kritis, pemecahan masalah, komunikasi, dan refleksi.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Salah satu hal yang berbeda dari praktik yang saya lakukan selama ini adalah cara merancang
+          pembelajaran dengan pendekatan Understanding by Design (UbD). Sebelumnya, saya cenderung memulai
+          perencanaan dengan menentukan materi yang akan disampaikan, kegiatan pembelajaran, kemudian
+          menentukan asesmen. Setelah mempelajari UbD, saya memahami bahwa perencanaan pembelajaran
+          seharusnya dimulai dari tujuan akhir yang ingin dicapai peserta didik, kemudian menentukan bukti
+          asesmen, dan selanjutnya merancang pengalaman belajar yang sesuai.
+        </p>
+        <p>
+          Selain itu, saya sebelumnya lebih banyak memandang asesmen sebagai alat untuk mengukur hasil belajar
+          setelah pembelajaran selesai. Melalui perkuliahan ini, saya memahami bahwa asesmen perlu dirancang
+          sejak awal dan dapat berupa asesmen diagnostik, formatif, maupun sumatif. Asesmen formatif
+          khususnya dapat digunakan selama proses pembelajaran untuk memperoleh informasi mengenai
+          perkembangan pemahaman peserta didik dan memberikan umpan balik secara berkelanjutan.
+        </p>
+        <p>
+          Hal lain yang berbeda adalah pemahaman mengenai pembelajaran mendalam. Sebelumnya, saya lebih
+          berfokus pada ketercapaian materi dan aktivitas peserta didik selama pembelajaran. Kini saya
+          memahami bahwa aktivitas yang banyak belum tentu menunjukkan pembelajaran yang mendalam.
+          Pembelajaran perlu memberikan kesempatan kepada peserta didik untuk memahami konsep secara utuh,
+          mengaitkan materi dengan konteks kehidupan, menerapkan pengetahuan, serta melakukan refleksi
+          terhadap proses belajarnya.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Beberapa konsep utama yang saya pelajari adalah bahwa pembelajaran mendalam merupakan pembelajaran
+          yang berkesadaran, bermakna, dan menggembirakan. Ketiga prinsip tersebut perlu menjadi dasar dalam
+          menciptakan pengalaman belajar yang tidak hanya berorientasi pada hasil, tetapi juga proses dan
+          perkembangan peserta didik.
+        </p>
+        <p>
+          Saya juga mempelajari konsep Understanding by Design (UbD) yang menekankan perencanaan pembelajaran
+          secara backward design. Guru perlu menentukan terlebih dahulu tujuan atau pemahaman yang
+          diharapkan, menentukan bukti asesmen yang menunjukkan ketercapaian tujuan tersebut, kemudian
+          merancang kegiatan pembelajaran yang membantu peserta didik mencapai tujuan.
+        </p>
+        <p>
+          Konsep penting lainnya adalah asesmen sebagai bagian dari pembelajaran. Asesmen bukan hanya untuk
+          memberikan nilai, tetapi sebagai sumber informasi bagi guru dan peserta didik. Hasil asesmen dapat
+          digunakan untuk memberikan umpan balik, melakukan perbaikan pembelajaran, serta menyesuaikan
+          pembelajaran dengan kebutuhan peserta didik. Saya juga semakin memahami pentingnya merancang
+          asesmen yang autentik dan sesuai dengan tujuan pembelajaran.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mempelajari materi Pembelajaran Mendalam dan Asesmen, saya ingin mengubah cara saya dalam
+          merancang pembelajaran. Saya tidak ingin lagi hanya berfokus pada "materi apa yang harus saya
+          ajarkan?", tetapi mulai dari pertanyaan "pemahaman apa yang harus dimiliki peserta didik setelah
+          pembelajaran?". Saya ingin menggunakan prinsip backward design agar tujuan, asesmen, dan kegiatan
+          pembelajaran memiliki keterkaitan yang jelas.
+        </p>
+        <p>
+          Dalam pembelajaran IPS, saya juga ingin lebih banyak menghadirkan permasalahan atau fenomena yang
+          dekat dengan kehidupan peserta didik. Misalnya, ketika mengajarkan materi globalisasi, peserta didik
+          tidak hanya diminta memahami pengertian dan dampaknya, tetapi juga menganalisis fenomena
+          globalisasi yang mereka temui dalam kehidupan sehari-hari. Dengan demikian, pembelajaran menjadi
+          lebih kontekstual dan bermakna.
+        </p>
+        <p>
+          Saya juga ingin meningkatkan penggunaan asesmen formatif dan pemberian umpan balik selama proses
+          pembelajaran. Hasil asesmen tidak hanya digunakan untuk menentukan nilai, tetapi menjadi dasar bagi
+          saya untuk mengetahui peserta didik yang sudah memahami materi, peserta didik yang masih mengalami
+          kesulitan, serta menentukan tindak lanjut yang diperlukan. Dengan perubahan tersebut, saya berharap
+          dapat menjadi guru yang lebih reflektif dan mampu merancang pembelajaran berdasarkan kebutuhan
+          peserta didik.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> RPM (Rencana Pembelajaran Mendalam) yang dirancang dengan pendekatan Understanding by Design (UbD).</p>
+          <p><strong>2. Alasan pemilihan:</strong> RPM dengan pendekatan UbD paling relevan dengan hasil refleksi saya mengenai perubahan cara pandang dalam merancang pembelajaran. Melalui artefak tersebut, terlihat bahwa saya mulai menerapkan prinsip backward design, yaitu merancang pembelajaran dengan menentukan tujuan dan pemahaman yang diharapkan terlebih dahulu, kemudian menentukan asesmen sebagai bukti ketercapaian, dan selanjutnya merancang kegiatan pembelajaran. Artefak ini juga menunjukkan bahwa pembelajaran yang saya rancang mulai diarahkan pada pembelajaran yang berkesadaran, bermakna, dan menggembirakan.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Bagian tujuan pembelajaran, asesmen, dan pengalaman belajar dalam RPM. Pada tujuan pembelajaran terlihat penerapan pemikiran backward design; pada asesmen terlihat bahwa asesmen tidak hanya ditempatkan sebagai kegiatan memperoleh nilai akhir, tetapi dirancang sebagai bagian dari proses pembelajaran; pada pengalaman belajar terlihat upaya menciptakan pembelajaran yang berkesadaran, bermakna, dan menggembirakan melalui kegiatan yang melibatkan peserta didik secara aktif. Dengan demikian, RPM berbasis UbD tersebut mendukung refleksi saya bahwa peran guru bukan hanya sebagai penyampai materi, tetapi sebagai perancang pengalaman belajar yang mampu membantu peserta didik mencapai pemahaman secara mendalam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MATA KULIAH 5 -->
+  <div class="course-panel" id="s1-5">
+    <div class="course-card">
+      <span class="sks">2 SKS</span>
+      <h4>Pola Pikir Bertumbuh (Growth Mindset) dalam Pembelajaran</h4>
+      <p class="desc">Membentuk ketahanan mental dan reflektif dalam merespons tantangan dunia pendidikan.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Materi Growth Mindset memiliki keterkaitan yang sangat erat dengan peran saya sebagai calon guru
+          karena membantu saya memahami bahwa kemampuan murid tidak bersifat tetap, tetapi dapat berkembang
+          melalui usaha, strategi yang tepat, latihan, dan umpan balik. Sebagai calon guru IPS, saya perlu
+          membangun keyakinan bahwa setiap murid memiliki potensi untuk berkembang, termasuk murid yang pada
+          awalnya kurang aktif, kurang percaya diri, atau mengalami kesulitan memahami materi. Growth Mindset
+          juga mengajarkan saya untuk memandang kesalahan dan kesulitan sebagai bagian dari proses belajar,
+          bukan sebagai tanda bahwa murid tidak mampu. Dengan demikian, saya dapat menciptakan pembelajaran
+          yang lebih positif, suportif, dan mendorong murid untuk berani mencoba.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Hal yang cukup berbeda dari praktik yang saya lakukan selama ini adalah cara memandang kemampuan
+          dan kesalahan murid. Sebelumnya, saya cenderung melihat hasil belajar sebagai gambaran kemampuan
+          murid pada saat itu. Setelah mempelajari Growth Mindset, saya memahami bahwa hasil belajar dapat
+          berubah apabila murid mendapatkan kesempatan untuk berusaha, mencoba strategi lain, dan memperoleh
+          umpan balik yang membangun. Saya juga menyadari bahwa pemberian pujian sebaiknya tidak hanya
+          berfokus pada hasil atau kecerdasan, tetapi pada proses, usaha, strategi, ketekunan, dan
+          perkembangan murid. Materi ini mendorong saya untuk lebih berhati-hati dalam menggunakan label
+          seperti "pintar" atau "kurang mampu" karena dapat memengaruhi cara murid memandang dirinya sendiri.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Konsep utama yang saya pelajari adalah perbedaan antara fixed mindset dan growth mindset. Fixed
+          mindset memandang kemampuan sebagai sesuatu yang relatif tetap, sedangkan growth mindset memandang
+          kemampuan sebagai sesuatu yang dapat dikembangkan. Saya juga mempelajari pentingnya proses, usaha,
+          strategi, tantangan, kesalahan, dan umpan balik dalam perkembangan kemampuan murid. Konsep penting
+          lainnya adalah penggunaan bahasa dan respons guru yang mendorong proses belajar, misalnya
+          memberikan apresiasi terhadap usaha dan strategi yang digunakan murid serta membantu mereka mencari
+          cara lain ketika mengalami kesulitan. Bagi saya sebagai calon guru, konsep tersebut penting karena
+          cara guru memberikan respons dapat memengaruhi motivasi, kepercayaan diri, dan ketekunan murid
+          dalam belajar.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mendapatkan materi Growth Mindset, saya ingin mengubah cara saya memberikan respons
+          terhadap proses belajar murid. Saya akan lebih menekankan apresiasi terhadap usaha, proses,
+          strategi, dan perkembangan, bukan hanya nilai akhir. Dalam pembelajaran IPS, saya juga ingin
+          memberikan kesempatan kepada murid untuk mencoba, berdiskusi, memperbaiki jawaban, dan belajar dari
+          kesalahan. Saya akan menghindari pemberian label yang dapat membuat murid merasa bahwa kemampuan
+          mereka sudah ditentukan. Selain itu, saya ingin membangun budaya kelas yang memandang tantangan
+          sebagai kesempatan belajar dan memberikan umpan balik yang spesifik serta membangun. Perubahan
+          tersebut juga akan saya terapkan pada diri saya sebagai calon guru dengan terus mengevaluasi praktik
+          pembelajaran dan tidak takut mencoba strategi baru.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> Latihan berbasis proyek dalam mempertajam pola pikir bertumbuh, yaitu tugas Mendesain Pembelajaran Berbasis Growth Mindset.</p>
+          <p><strong>2. Alasan pemilihan:</strong> Artefak ini memiliki keterkaitan paling kuat dengan hasil refleksi saya mengenai pentingnya Growth Mindset dalam peran sebagai calon guru. Melalui tugas Mendesain Pembelajaran Berbasis Growth Mindset, saya memperoleh pengalaman untuk tidak hanya memahami konsep, tetapi juga memikirkan penerapannya secara nyata dalam proses pembelajaran. Artefak ini memperlihatkan bahwa saya mulai menyadari pentingnya menciptakan pembelajaran yang memberikan ruang bagi murid untuk mencoba, mengalami tantangan, melakukan kesalahan, menerima umpan balik, dan memperbaiki proses belajarnya.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Bagian tugas Mendesain Pembelajaran Berbasis Growth Mindset, terutama pada bagian yang mengarahkan saya untuk merancang pembelajaran dengan mempertimbangkan proses perkembangan kemampuan murid. Bagian tersebut menunjukkan bahwa pembelajaran tidak hanya diarahkan pada pencapaian hasil akhir, tetapi juga pada bagaimana murid menjalani proses belajar, menghadapi tantangan, menggunakan strategi, dan melakukan perbaikan. Hal ini sejalan dengan refleksi saya bahwa sebagai calon guru saya perlu memberikan apresiasi terhadap usaha dan proses murid, memberikan umpan balik yang membangun, serta menciptakan suasana belajar yang membuat murid tidak takut melakukan kesalahan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MATA KULIAH 6 -->
+  <div class="course-panel" id="s1-6">
+    <div class="course-card">
+      <span class="sks">6 SKS</span>
+      <h4>Praktik Pengalaman Lapangan (PPL) 1 — Terbimbing</h4>
+      <p class="desc">Ruang terapan langsung di sekolah mitra yang terhubung erat dengan mata kuliah teori, memfasilitasi proses asistensi mengajar secara terbimbing.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Perkuliahan PPL Terbimbing (Praktik Pengalaman Lapangan) memiliki keterkaitan yang sangat erat
+          dengan peran saya sebagai calon guru karena memberikan kesempatan untuk menerapkan pengetahuan dan
+          keterampilan yang telah dipelajari selama perkuliahan ke dalam situasi pembelajaran yang nyata.
+          Melalui PPL Terbimbing, saya tidak hanya belajar mengenai bagaimana menyusun perangkat
+          pembelajaran, tetapi juga belajar melaksanakan pembelajaran, mengelola kelas, berkomunikasi dengan
+          peserta didik, serta melakukan refleksi terhadap proses pembelajaran yang telah dilakukan.
+        </p>
+        <p>
+          Pengalaman PPL Terbimbing juga membantu saya memahami bahwa menjadi guru membutuhkan kesiapan dalam
+          menghadapi kondisi kelas yang beragam. Rencana pembelajaran yang telah dibuat perlu disesuaikan
+          dengan karakteristik, kebutuhan, dan kondisi peserta didik. Oleh karena itu, PPL Terbimbing menjadi
+          proses penting bagi saya untuk membangun kompetensi pedagogik, profesional, sosial, dan kepribadian
+          sebagai calon guru.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Hal yang berbeda dari praktik yang saya lakukan sebelumnya adalah pemahaman bahwa perencanaan
+          pembelajaran tidak selalu berjalan sesuai dengan kondisi nyata di kelas. Sebelumnya, saya cenderung
+          beranggapan bahwa ketika RPM atau perangkat pembelajaran sudah disusun dengan baik, pembelajaran
+          akan berjalan sesuai dengan rencana. Namun, melalui PPL Terbimbing saya menemukan bahwa kondisi
+          peserta didik, waktu pembelajaran, tingkat pemahaman, keaktifan, maupun situasi kelas dapat
+          memengaruhi pelaksanaan pembelajaran.
+        </p>
+        <p>
+          Saya juga belajar bahwa guru perlu memiliki kemampuan untuk melakukan penyesuaian secara langsung
+          selama pembelajaran. Ketika peserta didik belum memahami materi, guru perlu memberikan penjelasan
+          atau scaffolding tambahan. Sebaliknya, ketika peserta didik sudah memahami materi, guru dapat
+          memberikan pertanyaan atau aktivitas yang lebih menantang. Pengalaman tersebut berbeda dengan
+          praktik saya sebelumnya yang lebih berfokus pada keterlaksanaan langkah-langkah pembelajaran sesuai
+          dengan rencana.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Konsep utama yang saya pelajari melalui PPL Terbimbing adalah bahwa guru harus mampu merancang,
+          melaksanakan, mengamati, dan merefleksikan pembelajaran secara berkelanjutan. Guru tidak hanya
+          bertugas menyampaikan materi, tetapi juga perlu memahami karakteristik peserta didik dan
+          menciptakan lingkungan belajar yang mendukung keterlibatan mereka.
+        </p>
+        <p>
+          Saya juga mempelajari pentingnya pengelolaan kelas, pembelajaran yang berpusat pada peserta didik,
+          asesmen, diferensiasi pembelajaran, komunikasi yang efektif, serta refleksi pembelajaran.
+          Konsep-konsep tersebut menjadi penting karena keberhasilan pembelajaran tidak hanya ditentukan oleh
+          penguasaan materi oleh guru, tetapi juga oleh kemampuan guru dalam menciptakan pengalaman belajar
+          yang sesuai dengan kebutuhan peserta didik.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mengikuti PPL Terbimbing, saya ingin meningkatkan kemampuan saya dalam merancang
+          pembelajaran yang lebih fleksibel dan responsif terhadap kondisi peserta didik. Saya tidak ingin
+          hanya berfokus pada keterlaksanaan kegiatan sesuai dengan RPM, tetapi juga memperhatikan apakah
+          peserta didik benar-benar terlibat, memahami materi, dan mencapai tujuan pembelajaran.
+        </p>
+        <p>
+          Saya juga ingin lebih rutin melakukan refleksi setelah pembelajaran. Hasil refleksi tersebut akan
+          saya gunakan untuk mengetahui bagian pembelajaran yang sudah berjalan baik dan bagian yang masih
+          perlu diperbaiki. Dalam pembelajaran IPS, saya ingin lebih banyak menggunakan permasalahan atau
+          fenomena yang dekat dengan kehidupan peserta didik sehingga pembelajaran menjadi lebih kontekstual
+          dan mendorong peserta didik untuk aktif berpikir, berdiskusi, serta mengemukakan pendapat.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> RPM Pembelajaran IPS yang digunakan dalam pelaksanaan PPL Terbimbing.</p>
+          <p><strong>2. Alasan pemilihan:</strong> RPM tersebut memiliki hubungan langsung dengan pengalaman saya selama melaksanakan PPL Terbimbing. RPM bukan hanya menjadi dokumen administratif, tetapi menjadi pedoman yang membantu saya mempersiapkan dan melaksanakan pembelajaran di kelas. Melalui RPM tersebut, saya dapat melihat proses perkembangan kemampuan saya dalam merancang pembelajaran yang sistematis. Pengalaman melaksanakan pembelajaran berdasarkan RPM memberikan pemahaman bahwa perangkat pembelajaran perlu disusun secara terencana, tetapi tetap dapat disesuaikan dengan kondisi nyata dan kebutuhan peserta didik di kelas.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Tujuan pembelajaran, langkah-langkah kegiatan pembelajaran, asesmen, serta media dan sumber belajar. Pada tujuan pembelajaran, saya belajar menetapkan kompetensi yang ingin dicapai secara lebih terarah. Pada kegiatan pembelajaran, saya dapat melihat bagaimana pembelajaran dirancang agar peserta didik terlibat secara aktif melalui kegiatan mengamati, berdiskusi, menganalisis, dan menyampaikan hasil pemikirannya. Bagian asesmen menjadi bukti bahwa saya mulai memperhatikan proses dan hasil belajar peserta didik. Bagian-bagian tersebut mendukung refleksi saya bahwa menjadi guru tidak hanya membutuhkan kemampuan menguasai materi, tetapi juga kemampuan merencanakan pembelajaran, mengelola kelas, menyesuaikan strategi dengan kondisi peserta didik, melakukan asesmen, dan merefleksikan pembelajaran.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEMESTER 2 ============ -->
+<section class="section" id="semester2">
+  <div class="section-title">
+    <h2>Refleksi Mata Kuliah Semester 2</h2>
+  </div>
+  <div class="semester-header">
+    <h3>Semester 2: Penguatan Mandiri, Kepemimpinan, dan Profesionalisme (20 SKS)</h3>
+    <p>
+      Semester kedua berfokus pada kemandirian praktik mengajar, penguatan hubungan sosial-emosional, serta
+      kepemimpinan pendidikan yang berdampak luas.
+    </p>
+  </div>
+
+  <div class="course-nav">
+    <button class="active" data-target="s2-1">PKB</button>
+    <button data-target="s2-2">PMA Lanjut</button>
+    <button data-target="s2-3">Pembelajaran Sosial Emosional</button>
+    <button data-target="s2-4">PPL 2 — Mandiri</button>
+    <button data-target="s2-5">Projek Kepemimpinan</button>
+    <button data-target="s2-6">MK Pilihan &amp; Enrichment</button>
+  </div>
+
+  <!-- MK 1 -->
+  <div class="course-panel active" id="s2-1">
+    <div class="course-card">
+      <span class="sks">2 SKS</span>
+      <h4>Pengembangan Keprofesian Berkelanjutan (PKB)</h4>
+      <p class="desc">Program pembinaan diri bagi guru untuk meningkatkan kompetensi pedagogik, profesional, sosial, dan kepribadian secara konsisten sepanjang kariernya.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Materi perkuliahan Pengembangan Keprofesian Berkelanjutan (PKB) memiliki keterkaitan yang erat
+          dengan peran saya sebagai calon guru karena memberikan pemahaman bahwa menjadi guru merupakan
+          proses belajar sepanjang hayat yang menuntut saya untuk terus mengembangkan kompetensi dan
+          meningkatkan kualitas pembelajaran. Melalui materi ini, saya memahami pentingnya Penilaian Kinerja
+          Guru (PKG) sebagai sarana untuk mengevaluasi kinerja dan mengidentifikasi aspek yang perlu
+          ditingkatkan, serta PKB sebagai upaya untuk mengembangkan kompetensi secara berkelanjutan melalui
+          pelatihan, refleksi, dan berbagi pengalaman dengan rekan sejawat. Di tengah perkembangan teknologi,
+          Revolusi Industri 4.0, masyarakat 5.0, serta tantangan dunia VUCA yang penuh perubahan dan
+          ketidakpastian, saya menyadari bahwa guru perlu bersikap adaptif, kreatif, dan terbuka terhadap
+          perkembangan zaman. Oleh karena itu, sebagai calon guru, saya perlu membangun kebiasaan untuk terus
+          belajar, mengevaluasi diri, dan memperbaiki praktik pembelajaran agar mampu menjadi guru yang
+          profesional serta memberikan pembelajaran yang relevan dengan kebutuhan murid.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Materi perkuliahan PKB yang berbeda dari praktik saya selama ini adalah pemahaman bahwa
+          pengembangan diri guru perlu dilakukan secara terencana dan berkelanjutan, bukan hanya melalui
+          pengalaman mengajar. Saya belajar bahwa guru perlu melakukan refleksi, mengevaluasi kinerja melalui
+          PKG, serta meningkatkan kompetensi melalui pelatihan, diskusi dengan rekan sejawat, dan penelitian
+          tindakan kelas. Selain itu, guru harus mampu beradaptasi dengan perkembangan teknologi dan
+          perubahan zaman agar pembelajaran tetap relevan dengan kebutuhan murid.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Konsep utama yang saya pelajari sebagai calon guru adalah pentingnya Penilaian Kinerja Guru (PKG)
+          dan Pengembangan Keprofesian Berkelanjutan (PKB) untuk meningkatkan kualitas dan profesionalisme
+          guru. Saya juga memahami bahwa guru perlu melakukan refleksi dan evaluasi diri secara berkala, terus
+          mengembangkan kompetensi, serta mampu mengikuti perkembangan teknologi dan perubahan zaman yang
+          semakin cepat. Hal ini menyadarkan saya bahwa menjadi guru berarti harus terus belajar dan
+          memperbaiki kualitas pembelajaran agar sesuai dengan kebutuhan murid.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mempelajari materi PKB, saya ingin lebih rutin melakukan refleksi dan evaluasi terhadap
+          pembelajaran yang telah dilaksanakan, mengenali kekurangan diri, serta mencari cara untuk
+          memperbaikinya. Saya juga ingin aktif mengikuti pelatihan, berdiskusi dengan rekan sejawat, dan
+          memanfaatkan teknologi untuk meningkatkan kompetensi. Dengan demikian, saya dapat terus berkembang
+          menjadi guru profesional yang mampu menyesuaikan pembelajaran dengan kebutuhan murid.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> Empat tugas, yaitu: (1) Tugas Bab 1: Konsep PKG dan PKB; (2) Tugas Bab 2: Penilaian Kinerja Guru; (3) Tugas Bab 9: Karya Inovatif; (4) Laporan PTK selama PPL.</p>
+          <p><strong>2. Alasan pemilihan:</strong> Keempat artefak tersebut saling berkaitan dan menunjukkan proses belajar saya dalam memahami pentingnya pengembangan keprofesian berkelanjutan sebagai calon guru. Tugas Bab 1 dan Bab 2 membantu saya memahami konsep PKG, PKB, serta pentingnya evaluasi kinerja guru. Tugas Bab 9 mendorong saya mengembangkan ide kreatif dan inovatif dalam pembelajaran IPS, sedangkan laporan PTK selama PPL menjadi bukti penerapan refleksi untuk memperbaiki pembelajaran berdasarkan permasalahan nyata di kelas. Keempatnya tidak hanya menunjukkan pemahaman teori, tetapi juga kemampuan merencanakan dan menerapkan upaya peningkatan kualitas pembelajaran.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Pada jawaban tugas Bab 1 tentang konsep PKG dan PKB, khususnya pentingnya evaluasi diri dan pengembangan kompetensi guru secara berkelanjutan. Pada tugas Bab 2, bagian analisis hasil penilaian kinerja dan rekomendasi program PKB menunjukkan pemahaman saya tentang cara meningkatkan kompetensi guru berdasarkan hasil evaluasi. Tugas Bab 9 tentang karya inovatif mendukung refleksi saya untuk lebih kreatif dalam mengembangkan media dan strategi pembelajaran IPS. Laporan PTK selama PPL menjadi bukti nyata bahwa saya belajar mengidentifikasi permasalahan pembelajaran, melakukan tindakan perbaikan, dan mengevaluasi hasilnya.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MK 2 -->
+  <div class="course-panel" id="s2-2">
+    <div class="course-card">
+      <span class="sks">3 SKS</span>
+      <h4>Pembelajaran Mendalam dan Asesmen (PMA) Lanjut</h4>
+      <p class="desc">Memantapkan asesmen formatif-sumatif yang adaptif untuk mendukung diferensiasi belajar.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Materi perkuliahan Pembelajaran Mendalam dan Asesmen Lanjut (Umum) memiliki keterkaitan yang erat
+          dengan peran saya sebagai calon guru karena membekali saya untuk mampu merancang pembelajaran yang
+          adaptif, inklusif, dan berpihak pada murid berdasarkan kebutuhan dan kondisi nyata di kelas. Melalui
+          penerapan DUP, TaRL, dan CRT, saya belajar bahwa setiap murid memiliki kemampuan, kebutuhan, latar
+          belakang, dan pengalaman budaya yang berbeda sehingga pembelajaran tidak dapat menggunakan satu
+          pendekatan yang sama untuk semua murid. Saya juga memahami pentingnya memanfaatkan data hasil
+          asesmen sebagai dasar dalam menentukan strategi, memberikan dukungan yang sesuai, dan melakukan
+          penyesuaian pembelajaran. Pemahaman ini membantu saya untuk menjadi guru yang lebih peka terhadap
+          kebutuhan murid, mampu mengambil keputusan berdasarkan data, serta menciptakan pembelajaran yang
+          bermakna dan memberikan kesempatan kepada setiap murid untuk berkembang.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Materi perkuliahan yang berbeda dari praktik saya selama ini adalah pemahaman bahwa hasil asesmen
+          tidak hanya digunakan untuk mengetahui nilai atau ketercapaian belajar murid, tetapi juga menjadi
+          dasar dalam merancang pembelajaran yang sesuai dengan kebutuhan murid. Melalui konsep DUP, TaRL, dan
+          CRT, saya belajar bahwa pembelajaran perlu memberikan berbagai pilihan cara belajar dan menunjukkan
+          pemahaman, menyesuaikan pembelajaran dengan tingkat kemampuan murid, serta mempertimbangkan latar
+          belakang budaya dan pengalaman murid. Sebelumnya, saya lebih cenderung merancang pembelajaran
+          berdasarkan materi dan tujuan yang harus diselesaikan, sedangkan setelah mempelajari materi ini saya
+          memahami pentingnya menggunakan data asesmen dan memahami keberagaman murid sebagai dasar dalam
+          menentukan strategi pembelajaran. Hal ini menjadi tantangan bagi saya untuk lebih fleksibel dalam
+          mengajar dan tidak menggunakan pendekatan yang sama untuk semua murid.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Konsep utama dan penting yang saya pelajari adalah bahwa pembelajaran perlu dirancang berdasarkan
+          kebutuhan, kemampuan, dan keberagaman murid dengan memanfaatkan data hasil asesmen sebagai dasar
+          pengambilan keputusan. Saya mempelajari Desain Universal untuk Pembelajaran (DUP) yang menekankan
+          penyediaan berbagai cara bagi murid untuk mengakses materi, terlibat dalam pembelajaran, dan
+          menunjukkan pemahamannya; Teaching at the Right Level (TaRL) yang menekankan pembelajaran sesuai
+          tingkat kemampuan murid; serta Culturally Responsive Teaching (CRT) yang mengaitkan pembelajaran
+          dengan latar belakang, pengalaman, dan konteks budaya murid. Ketiga konsep tersebut mengajarkan
+          saya bahwa guru perlu bersikap fleksibel, inklusif, dan responsif terhadap kebutuhan murid agar
+          pembelajaran menjadi lebih bermakna serta memberikan kesempatan kepada setiap murid untuk
+          berkembang.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mendapatkan materi, saya ingin mengubah cara saya dalam merancang pembelajaran dengan lebih
+          memperhatikan kebutuhan, kemampuan, dan keberagaman murid. Saya ingin membiasakan diri menggunakan
+          hasil asesmen sebagai dasar untuk menentukan strategi pembelajaran, memberikan pendampingan sesuai
+          tingkat kemampuan murid melalui prinsip TaRL, menyediakan berbagai pilihan dalam proses belajar
+          sesuai prinsip DUP, serta mengaitkan materi dengan pengalaman dan latar belakang budaya murid
+          melalui CRT. Saya juga ingin lebih peka dalam mengidentifikasi murid yang membutuhkan dukungan dan
+          tidak lagi menggunakan pendekatan yang sama untuk semua murid. Dengan perubahan tersebut, saya
+          berharap dapat menjadi guru yang lebih adaptif, inklusif, reflektif, dan berpihak pada murid,
+          sehingga setiap murid memperoleh kesempatan untuk belajar dan berkembang sesuai dengan potensinya.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> UTS berupa Rancangan Pembelajaran Mendalam berbasis Desain Universal untuk Pembelajaran (DUP) yang disusun berdasarkan kasus pembelajaran nyata di sekolah tempat PPL.</p>
+          <p><strong>2. Alasan pemilihan:</strong> Artefak tersebut secara langsung menunjukkan penerapan materi perkuliahan pada kondisi nyata di sekolah. Dalam penyusunannya, saya tidak hanya memahami konsep DUP secara teori, tetapi juga menganalisis kasus dan kebutuhan murid yang ditemukan di kelas kemudian menyesuaikan rancangan pembelajaran agar dapat mengakomodasi keberagaman murid. Artefak ini menjadi bukti bahwa saya mulai belajar merancang pembelajaran yang fleksibel, inklusif, adaptif, dan berpihak pada murid.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Analisis kasus dan kebutuhan murid, tujuan pembelajaran, rancangan kegiatan pembelajaran, serta bentuk asesmen yang disusun. Pada bagian analisis kasus, saya mengidentifikasi karakteristik, kebutuhan, dan hambatan belajar murid berdasarkan kondisi nyata. Pada bagian kegiatan pembelajaran, saya menerapkan prinsip DUP dengan menyediakan berbagai cara bagi murid untuk mengakses informasi, terlibat, dan menunjukkan pemahamannya. Bagian asesmen menunjukkan upaya saya untuk menilai pemahaman murid dengan mempertimbangkan keberagaman kemampuan dan kebutuhan mereka.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MK 3 -->
+  <div class="course-panel" id="s2-3">
+    <div class="course-card">
+      <span class="sks">3 SKS</span>
+      <h4>Pembelajaran Sosial Emosional (PSE)</h4>
+      <p class="desc">Mengintegrasikan kerangka CASEL untuk menciptakan iklim kelas yang aman secara psikologis dan empati.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Perkuliahan Pembelajaran Sosial Emosional (PSE) memiliki keterkaitan yang erat dengan peran saya
+          sebagai calon guru karena memberikan pemahaman bahwa keberhasilan pembelajaran tidak hanya
+          ditentukan oleh kemampuan akademik peserta didik, tetapi juga oleh kemampuan mereka dalam mengenali
+          dan mengelola emosi, membangun hubungan yang positif, mengambil keputusan, serta berinteraksi dengan
+          lingkungan sosialnya. Sebagai calon guru, saya perlu memahami bahwa setiap peserta didik memiliki
+          karakter, kondisi emosional, dan kebutuhan sosial yang berbeda sehingga perlu diciptakan lingkungan
+          belajar yang aman, nyaman, dan mendukung perkembangan mereka.
+        </p>
+        <p>
+          Dalam pembelajaran IPS, PSE juga sangat relevan karena materi IPS berkaitan erat dengan kehidupan
+          sosial, interaksi antarmanusia, keberagaman, dan permasalahan yang terjadi di masyarakat. Penerapan
+          PSE dapat membantu peserta didik tidak hanya memahami konsep IPS, tetapi juga mengembangkan
+          kemampuan bekerja sama, berempati, menghargai pendapat orang lain, berkomunikasi dengan baik, dan
+          mengambil keputusan secara bertanggung jawab. Hal tersebut menjadi bekal penting bagi saya untuk
+          menjadi guru yang mampu mendukung perkembangan peserta didik secara utuh.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Hal yang berbeda dari praktik yang saya lakukan selama ini adalah pemahaman bahwa pembelajaran sosial
+          emosional perlu dirancang dan diintegrasikan secara sadar ke dalam proses pembelajaran, bukan hanya
+          dilakukan ketika muncul permasalahan perilaku atau konflik di kelas. Sebelumnya, saya cenderung
+          memandang aspek sosial emosional sebagai sesuatu yang berkembang secara alami melalui interaksi
+          peserta didik selama pembelajaran.
+        </p>
+        <p>
+          Setelah mempelajari PSE, saya memahami bahwa guru dapat secara sengaja merancang aktivitas yang
+          membantu peserta didik mengembangkan kompetensi sosial emosional. Misalnya, melalui kegiatan
+          refleksi diri, diskusi kelompok, kerja sama, pengelolaan emosi, mendengarkan pendapat teman, serta
+          pengambilan keputusan yang bertanggung jawab. Saya juga memahami pentingnya guru terlebih dahulu
+          memiliki kesadaran sosial emosional yang baik karena guru menjadi contoh bagi peserta didik dalam
+          berinteraksi dan mengelola emosi.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Konsep utama yang saya pelajari adalah pentingnya mengembangkan kompetensi sosial emosional peserta
+          didik secara terintegrasi dalam pembelajaran. Saya memahami bahwa PSE tidak hanya bertujuan agar
+          peserta didik memiliki kemampuan akademik, tetapi juga mampu mengenali dirinya, mengelola emosi,
+          memiliki kesadaran terhadap orang lain, membangun hubungan yang positif, dan mengambil keputusan
+          secara bertanggung jawab.
+        </p>
+        <p>
+          Saya juga mempelajari pentingnya menciptakan lingkungan belajar yang aman, positif, dan inklusif.
+          Guru perlu memberikan ruang kepada peserta didik untuk menyampaikan pendapat, bekerja sama,
+          menghargai perbedaan, dan melakukan refleksi. Konsep tersebut membantu saya memahami bahwa
+          pembelajaran yang baik seharusnya memperhatikan perkembangan peserta didik secara menyeluruh, baik
+          dari aspek kognitif maupun sosial emosional.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mempelajari materi PSE, saya ingin lebih memperhatikan kondisi sosial dan emosional peserta
+          didik dalam merancang pembelajaran. Saya tidak ingin hanya berfokus pada ketercapaian tujuan
+          akademik, tetapi juga memberikan kesempatan kepada peserta didik untuk mengembangkan kemampuan
+          mengenali dan mengelola emosi, bekerja sama, berempati, serta berkomunikasi secara positif.
+        </p>
+        <p>
+          Dalam pembelajaran IPS, saya ingin mengintegrasikan kegiatan seperti diskusi kelompok, refleksi,
+          kerja sama, bermain peran, analisis kasus sosial, dan pengambilan keputusan yang dapat mengembangkan
+          kompetensi sosial emosional peserta didik. Saya juga ingin menjadi guru yang lebih sabar, terbuka,
+          dan mampu membangun hubungan positif dengan peserta didik sehingga tercipta suasana kelas yang
+          nyaman dan mendukung proses belajar.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> Rencana Penerapan Pembelajaran Sosial Emosional (PSE) pada Mata Pelajaran IPS Jenjang SMP.</p>
+          <p><strong>2. Alasan pemilihan:</strong> Artefak tersebut memiliki keterkaitan langsung dengan materi perkuliahan dan menunjukkan proses penerapan pemahaman yang saya peroleh. Melalui penyusunan rencana tersebut, saya belajar untuk mengidentifikasi kompetensi sosial emosional yang sesuai dengan karakteristik pembelajaran IPS dan merancang kegiatan yang dapat membantu peserta didik mengembangkan kompetensi tersebut. Artefak ini juga menunjukkan perubahan cara pandang saya sebagai calon guru — bahwa pembelajaran tidak hanya bertujuan membuat peserta didik memahami materi, tetapi juga membantu mereka menjadi individu yang mampu mengenali dirinya, berinteraksi secara positif, menghargai orang lain, dan mengambil keputusan secara bertanggung jawab.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Tujuan penerapan PSE, kompetensi sosial emosional yang dikembangkan, langkah-langkah pembelajaran, serta kegiatan refleksi peserta didik. Pada bagian tujuan, terlihat bahwa pembelajaran tidak hanya diarahkan pada pencapaian kompetensi akademik, tetapi juga pada pengembangan kemampuan sosial dan emosional peserta didik. Pada langkah-langkah pembelajaran, terdapat kegiatan yang memberikan kesempatan kepada peserta didik untuk berinteraksi, bekerja sama, menyampaikan pendapat, mendengarkan orang lain, dan menyelesaikan permasalahan bersama. Bagian refleksi mendukung pemahaman saya mengenai pentingnya memberikan kesempatan kepada peserta didik untuk mengenali pengalaman, perasaan, dan proses belajar mereka.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MK 4 -->
+  <div class="course-panel" id="s2-4">
+    <div class="course-card">
+      <span class="sks">8 SKS</span>
+      <h4>Praktik Pengalaman Lapangan (PPL) 2 — Mandiri</h4>
+      <p class="desc">Muara dari seluruh kompetensi pedagogis, tempat saya mengampu pembelajaran secara penuh, kontekstual, dan berdampak nyata di sekolah PPL.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Mata kuliah PPL Mandiri di SMP N 15 Yogyakarta membantu saya menyatukan teori kuliah dengan praktik
+          nyata di lapangan. Melalui integrasi materi Pembelajaran Mendalam dan Asesmen Lanjut (PMA Lanjut),
+          saya belajar melatih peran sebagai perancang pembelajaran yang tidak hanya menyajikan materi,
+          tetapi juga mampu menyusun strategi dan penilaian yang sesuai dengan kebutuhan siswa di kelas.
+        </p>
+        <p>
+          Selain itu, hadirnya aspek Pembelajaran Sosial Emosional (PSE) membentuk peran saya menjadi guru
+          yang lebih peka, berempati, dan mampu menciptakan suasana belajar yang aman serta mendukung
+          perkembangan emosi siswa SMP. Melalui tahapan orientasi, pembelajaran mandiri, hingga kegiatan
+          non-mengajar, saya mengasah kemandirian, tanggung jawab, dan fleksibilitas dalam menghadapi dinamika
+          sekolah. Pada akhirnya, proses diskusi refleksi di akhir kegiatan membiasakan saya untuk terus
+          mengevaluasi diri agar bisa menjadi guru yang adaptif dan selalu mau belajar demi kemajuan peserta
+          didik.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Materi perkuliahan kerap memberikan panduan yang tertata ideal, sedangkan praktik langsung di SMP N
+          15 Yogyakarta menuntut penyesuaian yang sangat dinamis. Di perkuliahan, fokus utama terletak pada
+          penyusunan perangkat pembelajaran dan instrumen asesmen yang ideal, lengkap, serta runut secara
+          teoritis. Namun saat di lapangan, praktik mengajar mengharuskan saya bertindak fleksibel seperti
+          menyesuaikan alokasi waktu yang sering berubah, menyederhanakan media dan asesmen di tengah
+          keterbatasan sarana, hingga merespons cepat dinamika suasana hati dan perilaku siswa di kelas yang
+          sulit diprediksi secara teori.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Sebagai calon guru, saya telah mempelajari empat konsep utama dan penting yang menjadi fondasi
+          profesionalitas saya:
+        </p>
+        <p>
+          <strong>Pembelajaran Berpusat pada Peserta Didik (Student-Centered Learning):</strong> Pembelajaran
+          dirancang bukan berdasarkan apa yang ingin diajarkan guru, melainkan apa yang dibutuhkan, diminati,
+          dan sesuai dengan taraf perkembangan siswa (pembelajaran berdiferensiasi dan kontekstual).
+        </p>
+        <p>
+          <strong>Pembelajaran Mendalam &amp; Asesmen Berkelanjutan (Deep Learning &amp; Assessment):</strong>
+          Memahami bahwa merancang pembelajaran bertujuan untuk membangun pemahaman konsep yang mendalam dan
+          bermakna, di mana asesmen (diagnostik, formatif, dan sumatif) digunakan untuk memandu serta
+          mengukur proses belajar, bukan sekadar memberikan nilai akhir.
+        </p>
+        <p>
+          <strong>Pembelajaran Sosial Emosional (PSE):</strong> Kesadaran bahwa keberhasilan belajar tidak
+          hanya ditentukan oleh kemampuan akademis, tetapi juga oleh kesejahteraan emosional (well-being).
+          Guru berperan menciptakan lingkungan belajar yang aman, inklusif, serta membangun empati dan
+          pengelolaan diri siswa.
+        </p>
+        <p>
+          <strong>Praktisi yang Reflektif (Reflective Practitioner):</strong> Kemampuan untuk terus
+          mengevaluasi dan merefleksikan setiap tindakan mengajar. Guru yang profesional adalah pembelajar
+          sepanjang hayat yang selalu siap beradaptasi dan memperbaiki strateginya demi kemajuan peserta
+          didik.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mendapatkan materi perkuliahan ini, ada tiga perubahan utama yang ingin saya lakukan:
+        </p>
+        <p>
+          <strong>Perencanaan Pembelajaran yang Lebih Adaptif:</strong> Beralih dari penyusunan modul/RPP
+          yang kaku menjadi perancangan pembelajaran dan asesmen yang lebih fleksibel, berpusat pada siswa,
+          serta responsif terhadap kebutuhan nyata di kelas.
+        </p>
+        <p>
+          <strong>Pengintegrasian Kesejahteraan Emosional (PSE):</strong> Tidak hanya fokus pada ketepatan
+          penyampaian materi akademis, tetapi juga aktif menciptakan suasana kelas yang aman, inklusif, dan
+          mendukung perkembangan emosi siswa.
+        </p>
+        <p>
+          <strong>Pembiasaan Refleksi Berkelanjutan:</strong> Mengembangkan kebiasaan untuk selalu
+          merefleksikan dan mengevaluasi setiap proses mengajar, sehingga saya bisa terus beradaptasi dan
+          meningkatkan kualitas diri sebagai guru profesional.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> (1) Rencana Pembelajaran Mendalam (RPM) IPS kelas IX materi "Globalisasi" dengan model Problem Based Learning (PBL); (2) Rencana Pembelajaran Mendalam (RPM) IPS kelas IX materi "Uang dan Lembaga Keuangan" dengan model Think Pair Share (TPS).</p>
+          <p><strong>2. Alasan pemilihan:</strong> RPM "Globalisasi" dengan PBL dipilih karena model PBL sangat efektif untuk mengembangkan kemampuan berpikir kritis dan pemecahan masalah terhadap fenomena nyata. Pembelajaran berpusat pada murid karena murid diajak aktif menganalisis masalah, berdiskusi, dan mencari solusi atas dampak globalisasi yang relevan dengan kehidupan sehari-hari. RPM "Uang dan Lembaga Keuangan" dengan TPS dipilih untuk menanggulangi beragamnya tingkat pemahaman dan keberanian murid dalam mengemukakan pendapat. Model TPS memberi ruang bagi setiap individu untuk berpikir mandiri (Think), membangun rasa percaya diri melalui diskusi berpasangan (Pair), hingga berbagi pemikiran bersama seluruh kelas (Share).</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Tujuan Pembelajaran (menunjukkan kejelasan arah pembelajaran yang berorientasi pada pemahaman mendalam), Langkah-langkah Kegiatan Pembelajaran (merefleksikan bagaimana sintaks model PBL dan TPS diterapkan secara fleksibel untuk mengaktifkan murid dan memfasilitasi interaksi sosial-emosional), Asesmen (menunjukkan penggunaan asesmen berkelanjutan — diagnostik, formatif, sumatif), serta Media dan Sumber Belajar (membuktikan kreativitas dalam menyajikan materi IPS secara kontekstual, menarik, dan relevan dengan kehidupan nyata peserta didik).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MK 5 -->
+  <div class="course-panel" id="s2-5">
+    <div class="course-card">
+      <span class="sks">2 SKS</span>
+      <h4>Projek Kepemimpinan</h4>
+      <p class="desc">Melatih jiwa kepemimpinan guru dalam menginisiasi perubahan dan inovasi di ekosistem sekolah serta komunitas.</p>
+
+      <div class="identity-box">
+        <span>Nama</span><span>:</span><span>Ina Arifa</span>
+        <span>NIM</span><span>:</span><span>25105260500</span>
+        <span>Prodi</span><span>:</span><span>Ilmu Pengetahuan Sosial</span>
+      </div>
+
+      <div class="reflection-block">
+        <h5>Lembar Kerja 2 (LK 2) — Refleksi Pengalaman Belajar</h5>
+
+        <div class="q">1. Apa keterkaitan materi perkuliahan dengan peran saya sebagai calon guru?</div>
+        <p>
+          Materi perkuliahan Project Kepemimpinan memiliki keterkaitan yang erat dengan peran saya sebagai
+          calon guru karena memberikan pemahaman bahwa guru tidak hanya berperan sebagai penyampai materi,
+          tetapi juga sebagai pemimpin yang mampu menggerakkan, mengarahkan, dan memberikan teladan bagi
+          murid maupun lingkungan sekolah. Melalui perkuliahan ini, saya belajar pentingnya memiliki
+          kemampuan berkomunikasi, bekerja sama, mengambil keputusan, mengelola tanggung jawab, menyelesaikan
+          masalah, serta melakukan refleksi dalam melaksanakan suatu program. Sebagai calon guru, kemampuan
+          tersebut sangat dibutuhkan agar saya mampu menciptakan perubahan yang positif di kelas maupun di
+          lingkungan sekolah. Project Kepemimpinan juga melatih saya untuk tidak hanya memiliki ide, tetapi
+          mampu merencanakan, melaksanakan, dan mengevaluasi sebuah kegiatan secara bertanggung jawab.
+        </p>
+
+        <div class="q">2. Apa saja materi perkuliahan yang berbeda dari praktik yang saya lakukan selama ini?</div>
+        <p>
+          Salah satu materi dalam perkuliahan Project Kepemimpinan yang berbeda dari praktik yang saya lakukan
+          selama ini adalah pemahaman bahwa kepemimpinan bukan hanya berkaitan dengan kemampuan memimpin orang
+          lain, tetapi juga bagaimana merencanakan, mengelola, melaksanakan, dan mengevaluasi sebuah proyek
+          secara sistematis. Sebelumnya, saya lebih sering berfokus pada pelaksanaan kegiatan sesuai dengan
+          tugas yang diberikan tanpa terlalu mendalami proses identifikasi masalah, pembagian peran,
+          pengelolaan sumber daya, serta evaluasi dampak kegiatan. Melalui perkuliahan ini, saya belajar bahwa
+          seorang calon guru perlu memiliki kemampuan untuk menginisiasi perubahan, bekerja kolaboratif,
+          mengelola berbagai perbedaan dalam kelompok, serta bertanggung jawab terhadap proses dan hasil dari
+          suatu kegiatan.
+        </p>
+
+        <div class="q">3. Apa saja konsep utama dan penting yang telah saya pelajari sebagai calon guru?</div>
+        <p>
+          Konsep utama dan penting yang saya pelajari dalam mata kuliah Project Kepemimpinan adalah bahwa
+          kepemimpinan bagi calon guru tidak hanya berkaitan dengan kemampuan mengarahkan orang lain, tetapi
+          juga kemampuan mengidentifikasi masalah, merancang solusi, mengelola, dan melaksanakan sebuah
+          proyek secara bertanggung jawab. Melalui pembelajaran berbasis proyek, saya belajar pentingnya
+          kolaborasi, komunikasi yang efektif, pemecahan masalah, pengambilan keputusan, pembagian peran,
+          serta kemampuan beradaptasi dalam menghadapi berbagai kondisi selama pelaksanaan proyek. Pengalaman
+          tersebut membantu saya memahami bahwa seorang guru perlu memiliki jiwa kepemimpinan agar mampu
+          menjadi penggerak perubahan dan menciptakan solusi nyata terhadap permasalahan yang ada di
+          lingkungan pendidikan.
+        </p>
+
+        <div class="q">4. Apa saja perubahan yang ingin saya lakukan setelah mendapatkan materi perkuliahan ini?</div>
+        <p>
+          Setelah mendapatkan materi perkuliahan Project Kepemimpinan, saya ingin menjadi calon guru yang
+          lebih inisiatif, bertanggung jawab, komunikatif, dan mampu bekerja sama dalam menghadapi berbagai
+          permasalahan di lingkungan pendidikan. Saya ingin membiasakan diri untuk tidak hanya melihat
+          permasalahan, tetapi juga berusaha mencari dan merancang solusi yang dapat diterapkan secara nyata.
+          Selain itu, saya ingin meningkatkan kemampuan dalam mengelola kegiatan atau proyek mulai dari tahap
+          perencanaan, pelaksanaan, hingga evaluasi. Saya juga ingin menerapkan sikap kepemimpinan dalam
+          pembelajaran dan lingkungan sekolah dengan menjadi guru yang mampu mengajak orang lain
+          berkolaborasi, terbuka terhadap masukan, serta berani melakukan perubahan positif demi menciptakan
+          lingkungan belajar yang lebih baik.
+        </p>
+
+        <div class="artefak-box">
+          <h5>Analisis Artefak Pembelajaran</h5>
+          <p><strong>1. Artefak yang dipilih:</strong> Project pembuatan media pembelajaran berupa Monopoli dan Smartbox JAPRODJA (Jelajah Provinsi Daerah Istimewa Yogyakarta).</p>
+          <p><strong>2. Alasan pemilihan:</strong> Kedua media tersebut merupakan hasil nyata dari penerapan pembelajaran berbasis proyek. Melalui pembuatan media tersebut, saya tidak hanya belajar menghasilkan sebuah produk pembelajaran, tetapi juga mengalami secara langsung proses merencanakan proyek, bekerja sama dalam tim, membagi tugas, berkomunikasi, menyelesaikan masalah, mengambil keputusan, dan bertanggung jawab terhadap hasil proyek. Artefak ini juga relevan dengan peran saya sebagai calon guru karena produk yang dihasilkan dapat digunakan sebagai media pembelajaran IPS yang lebih menarik dan interaktif bagi murid.</p>
+          <p><strong>3. Bagian yang mendukung refleksi:</strong> Proses perencanaan, pembagian tugas, pembuatan media, pelaksanaan, dan evaluasi proyek. Pada tahap perencanaan, saya belajar mengidentifikasi kebutuhan pembelajaran dan menentukan konsep media yang sesuai. Pada tahap pelaksanaan, saya mendapatkan pengalaman dalam berkolaborasi, berkomunikasi, mengelola tugas, mengambil keputusan, dan menyelesaikan masalah yang muncul selama proses pembuatan media. Tahap evaluasi membantu saya melakukan refleksi terhadap kelebihan dan kekurangan produk yang telah dibuat. Keseluruhan proses tersebut mendukung refleksi saya bahwa seorang calon guru perlu memiliki kemampuan kepemimpinan, tidak hanya dalam memimpin murid, tetapi juga dalam bekerja sama, menginisiasi sebuah kegiatan, mengelola tanggung jawab, dan menghasilkan solusi atau produk yang bermanfaat bagi pembelajaran.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MK 6 -->
+  <div class="course-panel" id="s2-6">
+    <div class="course-card">
+      <span class="sks">MK Pilihan &amp; Program Enrichment</span>
+      <h4>Pelengkapan Kompetensi Holistik</h4>
+      <p class="desc">Penguatan komitmen lingkungan belajar yang aman dan pengembangan kompetensi menyeluruh.</p>
+
+      <div class="reflection-block">
+        <p>
+          Pelengkapan kompetensi holistik melalui Pengembangan Keprofesian Berkelanjutan (2 SKS), Pendidikan
+          Inklusif Tingkat Dasar, Literasi Kesehatan Mental, serta penguatan komitmen lingkungan belajar yang
+          aman melalui Pencegahan dan Penanganan Kekerasan di Perguruan Tinggi (PPKPT).
+        </p>
+        <p>
+          Rangkaian mata kuliah pilihan dan program enrichment ini memperkaya kompetensi saya sebagai calon
+          guru, khususnya dalam memahami keberagaman peserta didik, pentingnya kesehatan mental, serta
+          menciptakan lingkungan belajar yang aman, inklusif, dan bebas dari segala bentuk kekerasan —
+          sejalan dengan komitmen saya untuk menjadi pendidik yang berpihak pada murid dan berkarakter
+          Pancasila.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REFLEKSI PPG ============ -->
+<section class="section" id="refleksi-ppg">
+  <div class="section-title">
+    <h2>Refleksi Pengalaman Belajar Selama PPG</h2>
+    <p>Evaluasi dan masukan untuk pengembangan diri setelah memenuhi seluruh mata kuliah semester 1 dan semester 2.</p>
+  </div>
+
+  <div class="semester-header">
+    <h3>Struktur Perjalanan Akademik &amp; Kurikulum Terintegrasi</h3>
+    <p>
+      Perjalanan studi pada Program Pendidikan Profesi Guru (PPG) Calon Guru dirancang secara sistematis
+      melalui kurikulum terintegrasi sebanyak 38 SKS selama dua semester. Seluruh mata kuliah dirangkai untuk
+      menjembatani teori pedagogis, penguatan karakter diri, serta praktik lapangan yang kontekstual dan
+      berakar pada realitas peserta didik.
+    </p>
+  </div>
+
+  <div class="course-card">
+    <div class="identity-box" style="background:var(--brown);color:var(--cream);">
+      <span style="color:var(--brown-light);">Nama</span><span style="color:var(--tan);">:</span><span style="color:var(--cream);">Ina Arifa</span>
+      <span style="color:var(--brown-light);">NIM</span><span style="color:var(--tan);">:</span><span style="color:var(--cream);">25105260500</span>
+      <span style="color:var(--brown-light);">Prodi</span><span style="color:var(--tan);">:</span><span style="color:var(--cream);">Ilmu Pengetahuan Sosial</span>
+    </div>
+    <h4>Lembar Kerja 3 (LK 3) — Refleksi Pengalaman Belajar Selama Mengikuti PPG</h4>
+
+    <table class="lk3-table">
+      <thead>
+        <tr><th>Indikator</th><th>Uraian Jawaban</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Setelah mengikuti rangkaian refleksi pengalaman belajar, menurut Anda, bagaimana seharusnya pendidikan di Indonesia?</td>
+          <td>
+            Pendidikan di Indonesia seharusnya menjadi ekosistem yang inklusif, kontekstual, berorientasi pada
+            proses, dan berpusat pada peserta didik (student-centered). Selaras dengan filosofi Ki Hadjar
+            Dewantara, pendidikan wajib menuntun tumbuh kembang anak sesuai kodrat alam dan zamannya demi
+            mewujudkan nilai luhur Pancasila. Pendidikan tidak boleh terjebak pada budaya kaku yang hanya
+            berorientasi nilai akademik akhir, melainkan harus memicu pembelajaran mendalam (deep learning)
+            melalui penyusunan strategi yang aman secara psikologis (psychological safety). Selain itu,
+            pendidikan harus adaptif terhadap teknologi digital, responsif terhadap keberagaman karakteristik
+            siswa, serta mampu melahirkan solusi nyata atas permasalahan di lingkungan masyarakat (seperti
+            prinsip SDGs).
+          </td>
+        </tr>
+        <tr>
+          <td>Apa saja yang dapat Anda lakukan untuk menjadi guru profesional?</td>
+          <td>
+            Untuk menjadi guru profesional, saya harus mengintegrasikan seluruh kompetensi yang telah diperoleh
+            selama program PPG secara konsisten dan reflektif:
+            <br><br>
+            <strong>1) Menghidupkan Pola Pikir Bertumbuh (Growth Mindset):</strong> Memandang hambatan mengajar
+            dan karakteristik unik murid bukan sebagai batasan permanen, melainkan sebagai peluang untuk terus
+            mengevaluasi strategi pedagogis saya.
+            <br><br>
+            <strong>2) Menerapkan Praktik Data Profiling &amp; DUP:</strong> Selalu memulai kelas dengan
+            asesmen diagnostik (kognitif/non-kognitif) untuk merancang pembelajaran berdiferensiasi yang ramah
+            dan inklusif bagi seluruh siswa.
+            <br><br>
+            <strong>3) Mengutamakan Kredibilitas &amp; Keteladanan:</strong> Menjadi Living Values Model yang
+            menjaga keselarasan antara ucapan dan tindakan, serta mengimplementasikan Pembelajaran
+            Sosial-Emosional (CASEL) agar terhindar dari bias komunikasi yang merugikan murid.
+            <br><br>
+            <strong>4) Berkomitmen pada PKB (Pengembangan Keprofesian Berkelanjutan):</strong> Aktif melakukan
+            Penelitian Tindakan Kelas (PTK), menulis publikasi ilmiah (prinsip APIK), dan berkolaborasi dalam
+            komunitas MGMP untuk memperbarui kompetensi digital dan profesionalitas saya.
+          </td>
+        </tr>
+        <tr>
+          <td>Apa saja tiga hal penting yang akan Anda lakukan ketika memulai karier sebagai guru?</td>
+          <td>
+            <strong>1) Membangun Ekosistem Kelas yang Aman secara Psikologis dan Inklusif (Fase Orientasi
+            Karakteristik):</strong> Saya akan melaksanakan asesmen diagnostik awal secara sistematis untuk
+            memetakan kesiapan dan gaya belajar murid. Saya akan menyusun kesepakatan kelas yang mengedepankan
+            budaya 5S, disiplin positif tanpa mempermalukan, serta menata ruang fisik kelas secara adaptif demi
+            mengakomodasi murid yang memiliki keterbatasan kesehatan fisik.
+            <br><br>
+            <strong>2) Mereformasi Rancangan Pembelajaran Menjadi Pembelajaran Mendalam Berbasis Teknologi (Fase
+            Inti Pedagogis):</strong> Saya akan mengganti slide PPT yang padat teks dengan infografis interaktif
+            dan mengganti presentasi kelompok monoton dengan metode inovatif seperti Gallery Walk demi menekan
+            angka kejenuhan belajar murid. Seluruh materi IPS akan dikemas secara kontekstual dan diintegrasikan
+            dengan platform evaluasi digital (seperti Wayground/Quizziz).
+            <br><br>
+            <strong>3) Menginstitusikan Refleksi Terstruktur dan Kemitraan Kolaboratif (Fase Keberlanjutan
+            Profesi):</strong> Saya akan mendedikasikan 5 menit terakhir di setiap akhir sesi pembelajaran
+            untuk aktivitas Exit Ticket sebagai refleksi afektif murid. Saya juga akan mendokumentasikan setiap
+            riwayat pembinaan kelas secara tertulis dan membangun komunikasi rutin sejak awal tahun ajaran baru
+            dengan kepala sekolah, rekan sejawat, serta Forum Orang Tua Siswa (FOS) sebagai bentuk
+            akuntabilitas kepemimpinan guru profesional.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="artefak-box" style="margin-top:26px;">
+      <h5>Paradigma Baru Setelah Seminar PPG</h5>
+      <p>
+        Refleksi ini menggambarkan paradigma baru saya sebagai mahasiswa PPG setelah mengikuti mata kuliah
+        Seminar PPG: dari sekadar calon guru yang menyampaikan materi, menjadi pendidik reflektif yang
+        menuntun, memberdayakan, dan berkomitmen pada perbaikan berkelanjutan — selaras dengan filosofi Ki
+        Hadjar Dewantara, nilai-nilai Pancasila, serta tuntutan pendidikan abad ke-21.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KARYA INOVASI ============ -->
+<section class="section" id="karya">
+  <div class="section-title">
+    <h2>Hasil Penyusunan Karya Inovasi Pendidikan</h2>
+    <p>Produk akhir PPG Calon Guru berbasis prinsip kebaruan, kreativitas, kontekstualitas, serta keefektifan.</p>
+  </div>
+
+  <div class="karya-card">
+    <span class="badge">Dalam Proses Penyempurnaan</span>
+    <p>
+      Hasil penyusunan karya inovasi pendidikan ini merupakan buah dari refleksi atas pengalaman belajar paling
+      bermakna selama mengikuti Program PPG Calon Guru. Produk ini dirancang berbasis prinsip <strong>kebaruan,
+      kreativitas, kontekstualitas, serta keefektifan</strong> guna memecahkan tantangan nyata dalam
+      pembelajaran IPS.
+    </p>
+    <p>
+      Seluruh dokumen pendukung, wujud karya, dan rubrik penilaian LK 4 telah didokumentasikan secara
+      terstruktur sebagai bukti komitmen pengembangan profesionalisme guru.
+    </p>
+    <div class="process-note">
+      <strong>Status:</strong> Laman ini masih dalam proses penyempurnaan. Karya inovasi pendidikan akan
+      segera dipublikasikan setelah proses finalisasi dokumen dan validasi karya selesai. Terima kasih atas
+      kesabaran dan perhatiannya.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p><strong>Ina Arifa</strong> · NIM 25105260500 · Pendidikan IPS · Universitas Negeri Yogyakarta</p>
+  <p style="margin-top:8px;">Seminar Pendidikan Profesi Guru Calon Guru · 2026</p>
+  <p style="margin-top:8px;font-size:.78rem;opacity:.75;">© 2026 — Portofolio Refleksi PPG Calon Guru IPS</p>
+</footer>
+
+<button id="top-btn" title="Kembali ke atas">↑</button>
+
+<script>
+/* ============ NAVBAR ACTIVE STATE (SCROLL SPY) ============ */
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = document.querySelectorAll('section[id], header[id]');
+
+window.addEventListener('scroll', () => {
+  let current = 'beranda';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+
+  /* back to top */
+  const btn = document.getElementById('top-btn');
+  btn.classList.toggle('show', window.scrollY > 400);
+});
+
+/* smooth scroll with offset for sticky navbar */
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+    }
+  });
+});
+
+/* ============ COURSE NAV TABS ============ */
+document.querySelectorAll('.course-nav').forEach(nav => {
+  const buttons = nav.querySelectorAll('button');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const container = nav.parentElement;
+      const panels = container.querySelectorAll('.course-panel');
+      panels.forEach(p => p.classList.remove('active'));
+      const target = document.getElementById(btn.dataset.target);
+      if (target) {
+        target.classList.add('active');
+        /* scroll sedikit ke awal panel agar nyaman dibaca */
+        const y = nav.offsetTop - 90;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+  });
+});
+
+/* ============ BACK TO TOP ============ */
+document.getElementById('top-btn').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ============ SIMPLE FADE-IN ON SCROLL ============ */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.menu-card, .vm-card, .course-card, .intro-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = 'opacity .6s ease, transform .6s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
